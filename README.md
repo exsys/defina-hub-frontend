@@ -1,6 +1,10 @@
-# DefinaClubFrontend
+# DefinaHubFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+
+## Setting up locally
+
+Run `npm install` after cloning the repo and checkout to a custom git branch using `git checkout <branch name>`.
 
 ## Development server
 
@@ -12,7 +16,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` or custom defined directory. (angular.json)
 
 ## Running unit tests
 

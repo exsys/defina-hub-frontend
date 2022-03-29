@@ -1,0 +1,82 @@
+
+h6 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+span {
+    font-size: 1.1em;
+}
+
+.images-container {
+    width: 100%;
+    text-align: center;
+}
+
+.hero-recommendation-img {
+    width: 130px;
+}
+
+.heroes-recommendation-container {
+    padding: 2em 0.25em;
+}
+
+.recommendation-card {
+    border: 1px solid #e6d29d;
+    background-color: #333;
+    border-radius: 0.25em;
+    margin-bottom: 2em;
+}
+
+.recommendation-info {
+    padding: 0.5rem;
+    border-top: 1px solid gray;
+}
+
+.button-wrapper {
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 576px) {
+    .heroes-recommendation-container {
+        padding: 1em 2.5em;
+    }
+    .hero-recommendation-img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .heroes-recommendation-container {
+        padding: 1em 4em;
+    }
+    .hero-recommendation-img {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .heroes-recommendation-container {
+        padding: 1em 6.5em;
+    }
+    .hero-recommendation-img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1308px) {
+    .hero-recommendation-img {
+        width: 230px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .heroes-recommendation-container {
+        padding: 2em 8em;
+    }
+    .hero-recommendation-img {
+        width: 200px;
+    }
+}

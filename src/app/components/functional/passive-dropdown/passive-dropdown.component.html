@@ -1,0 +1,15 @@
+<div class="custom-dropdown-container">
+    <div class="passive-select-btn" (click)="toggleVisibility()">
+        <span *ngIf="selectedLevel">{{ selectedLevel.level }}</span>
+    </div>
+    <div class="passive-selection-list" [class.show-content]="showToggle === true" [isVisible]="showToggle" (clickOutside)="close()">
+        <ul>
+            <li *ngFor="let level of dropdownList" (click)="selectPassive(level)">
+                {{ level.level }}
+                <span *ngIf="storage.team[heroNumber]" class="passive-tooltip">
+                    +{{ passiveValues[level.index]?.atk }}% ATK / +{{ passiveValues[level.index]?.hp }}% HP
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>

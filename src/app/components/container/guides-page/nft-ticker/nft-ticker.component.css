@@ -1,0 +1,332 @@
+h1, h5 {
+    display: inline-block;
+}
+
+h5 {
+    font-size: 1.4em;
+    cursor: pointer;
+    margin: 0;
+    z-index: 1;
+    color: rgb(245, 245, 245);
+}
+
+h5:hover {
+    color: #e6d29d;
+}
+
+h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h1 span {
+    font-size: 0.6em;
+}
+
+span {
+    display: inline-block;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    margin-left: 0.5em;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    margin-bottom: 0.5em;
+    width: 49%;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 0.25em;
+}
+
+li:hover {
+    color: #e6d29d;
+}
+
+.card-amount-bar img {
+    width: 35px;
+    height: 35px;
+}
+
+.card-info-container {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.card-info-content, .rarity-info-content {
+    padding: 1rem 0.25rem;
+}
+
+.card-info {
+    width: 100%;
+}
+
+.rarity-info, .total-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.rarity-check {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.hero-name-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0.4rem;
+}
+
+.rarity-container, .total-container {
+    width: 30%;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.rarity-container img {
+    width: auto;
+    height: 98%;
+}
+
+.total-container {
+    border-left: 2px solid rgb(180, 180, 180);
+    align-items: center;
+}
+
+.card-amount-bar {
+    border: 1px solid #e6d29d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 2rem;
+    width: 40%;
+    height: inherit;
+    margin: 0 1.5rem;
+    flex-grow: 1;
+}
+
+/* TODO: testen ob das was bringt */
+.card-amount-bar span {
+    z-index: 1;
+}
+
+.faction-progress-bar {
+    height: 100%;
+    position: absolute;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: width .6s ease;
+}
+
+.total-progress-bar {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.faction-emblem-container {
+    margin-left: 4px;
+}
+
+.hero-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 180px;
+    overflow: auto;
+    background-color: rgb(87, 87, 87); /* Fallback color if below opacity doesn't work */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-modal-content {
+    background-color: rgb(63, 63, 63);
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #e6d29d;
+    width: 80%;
+    border-radius: 0.5em;
+}
+
+.show-content {
+    display: block;
+}
+
+.background-darkening {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    margin: 0 0.5rem 1rem 0.5rem;
+    border-bottom: 1px solid gray;
+}
+
+.margin-bottom-big {
+    margin-bottom: 1.5rem;
+}
+
+.SSS-border {
+    border-left: 2px solid #C1250A;
+}
+
+.SS-border {
+    border-left: 2px solid #EAD296;
+}
+
+.S-border {
+    border-left: 2px solid #EA7DFF;
+}
+
+.A-border {
+    border-left: 2px solid #17EFF4;
+}
+
+.SSS-background {
+    background-color: #e9624b5d;
+}
+
+.SS-background {
+    background-color: #ead2965d;
+}
+
+.S-background {
+    background-color: #fa0afa50;
+}
+
+.A-background {
+    background-color: #00e1ff67;
+}
+
+.prometheus-background {
+    background-color: #ffd77b60;
+}
+
+.ouroboros-background {
+    background-color: #b7505365;
+}
+
+.thots-background {
+    background-color: #a971c856;
+}
+
+.aegis-background {
+    background-color: #82d85163;
+}
+
+.non-mobile {
+    display: none;
+}
+
+.selected  {
+    color: #e6d29d;
+    box-shadow: 0 0 13px 2px #7a7a7a96;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(95, 95, 95);
+    border-radius: 15px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(112, 112, 112);
+}
+
+@media (min-width: 576px) {
+    .card-info {
+        padding: 0 1.5rem;
+    }
+    .hero-modal-content {
+        width: 55%;
+    }
+    .hero-name-container {
+        width: 40%;
+    }
+    img {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-modal-content {
+        width: 45%;
+    }
+    img {
+        width: 70%;
+    }
+    .non-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-modal-content {
+        width: 38%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-modal-content {
+        width: 30%;
+    }
+    .hero-name-container {
+        width: 30%;
+    }
+    .card-amount-bar {
+        width: 50%;
+        flex-grow: unset;
+    }
+}
+
+@media (min-width: 1500px) {
+    .hero-modal-content {
+        width: 25%;
+    }
+    .card-amount-bar {
+        width: 40%;
+    }
+}

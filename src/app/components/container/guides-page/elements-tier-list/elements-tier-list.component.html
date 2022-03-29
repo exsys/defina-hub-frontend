@@ -1,0 +1,16 @@
+<div class="element-tier-list-container">
+    <div class="elements-tierlist-navbar">
+        <ul>
+            <li [class.selected]="selectedView === 'basic'" (click)="changeView('basic')">Basic Attack</li>
+            <li [class.selected]="selectedView === 'skill'" (click)="changeView('skill')">Skill/Hyper Attack</li>
+            <li [class.selected]="selectedView === 'passive'" (click)="changeView('passive')">Passive</li>
+        </ul>
+    </div>
+
+    <div class="tierlist-container">
+        <app-element-tier-list [isPassive]="selectedView === 'passive'"
+            [currAoeRanking]="currAoeRanking"
+            [currSingleRanking]="currSingleRanking"
+            [currRanking]="currRanking"></app-element-tier-list>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-center">
+    <!-- red border muss vom storage checken sonst klappts nicht -->
+    <div class="skill-element-icon-container" [class.red-border]="requirementNotMet" (click)="toggleVisibility()">
+        <img src="assets/images/{{getImageName(currentElement.name)}}.png" alt="skill element" 
+            *ngIf="currentElement !== undefined" (mouseover)="changeDescription()">
+    </div>
+    <div class="element-selection-list" [class.show-content]="showToggle===true" [isVisible]="showToggle" (clickOutside)="close()">
+        <ul>
+            <li *ngFor="let element of elementList" (click)="selectElement(element)">
+                <div class="list-item-container">
+                    <img class="list-icon" src="assets/images/{{getImageName(element.name)}}.png" alt="skill element">
+                    <span class="element-name text-center">{{ element.name }}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,129 @@
+<div class="table-container">
+    <table class="attack-elements-table" *ngIf="isPassive === false" cellspacing="0">
+        <tr>
+            <th><app-tooltip [tooltipText]="tooltips.elementRanking"></app-tooltip></th>
+            <th>AoE</th>
+            <th>Single target</th>
+        </tr>
+        <tr>
+            <td>S</td>
+            <td>
+                <img *ngFor="let element of currAoeRanking.s" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+            <td>
+                <img *ngFor="let element of currSingleRanking.s" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>
+                <img *ngFor="let element of currAoeRanking.a" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+            <td>
+                <img *ngFor="let element of currSingleRanking.a" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>
+                <img *ngFor="let element of currAoeRanking.b" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+            <td>
+                <img *ngFor="let element of currSingleRanking.b" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>
+                <img *ngFor="let element of currAoeRanking.c" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+            <td>
+                <img *ngFor="let element of currSingleRanking.c" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>
+                <img *ngFor="let element of currAoeRanking.f" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+            <td>
+                <img *ngFor="let element of currSingleRanking.f" src="assets/images/{{element.image}}.png"
+                    alt="skill element" (click)="showElementInfo(element)">
+            </td>
+        </tr>
+    </table>
+
+    <table class="passive-elements-table" *ngIf="isPassive === true">
+        <tr>
+            <th></th>
+            <th>Elements</th>
+        </tr>
+        <tr>
+            <td>S</td>
+            <td>
+                <img *ngFor="let element of currRanking.s" src="assets/images/{{element.image}}.png" alt="skill element"
+                    (click)="showElementInfo(element)">
+            </td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>
+                <img *ngFor="let element of currRanking.a" src="assets/images/{{element.image}}.png" alt="skill element"
+                    (click)="showElementInfo(element)">
+            </td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>
+                <img *ngFor="let element of currRanking.b" src="assets/images/{{element.image}}.png" alt="skill element"
+                    (click)="showElementInfo(element)">
+            </td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>
+                <img *ngFor="let element of currRanking.c" src="assets/images/{{element.image}}.png" alt="skill element"
+                    (click)="showElementInfo(element)">
+            </td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>
+                <img *ngFor="let element of currRanking.f" src="assets/images/{{element.image}}.png" alt="skill element"
+                    (click)="showElementInfo(element)">
+            </td>
+        </tr>
+    </table>
+
+    <div class="element-modal" [class.show-content]="showModal === true">
+        <div class="element-modal-content" [isVisible]="showModal" (clickOutside)="close()">
+            <div class="element-modal-header">
+                <h1>Element information</h1>
+            </div>
+
+            <div class="element-modal-information">
+                <span>
+                    <h6>Name:</h6> {{ modalName }}
+                </span>
+                <span>
+                    <h6>Ranking:</h6> {{ modalRanking }}
+                </span>
+                <span>
+                    <h6>Description:</h6> {{ modalDescription }}
+                </span>
+                <span>
+                    <h6>Notes:</h6> {{ modalNotes }}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

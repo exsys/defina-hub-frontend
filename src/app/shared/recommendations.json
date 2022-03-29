@@ -1,0 +1,712 @@
+{
+    "budget": [
+        {
+            "index": 0,
+            "heroes": [
+                {
+                    "name": "Hugo",
+                    "image": "hugo"
+                },
+                {
+                    "name": "Erwin Schrödinger",
+                    "image": "erwin"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Zorro",
+                    "image": "zorro"
+                }
+            ],
+            "description": "Probably the strongest SAAA team. Hugo is the only S Hero who is able to hit the whole enemy team. But he usually also costs more on the marketplace than other S heroes."
+        },
+        {
+            "index": 1,
+            "heroes": [
+                {
+                    "name": "Nicolaus Copernicus",
+                    "image": "nicolaus"
+                },
+                {
+                    "name": "Erwin Schrödinger",
+                    "image": "erwin"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Zorro",
+                    "image": "zorro"
+                }
+            ],
+            "description": "Nicolaus is a pretty solid replacement for Hugo."
+        },
+        {
+            "index": 2,
+            "heroes": [
+                {
+                    "name": "Hasan",
+                    "image": "hasan"
+                },
+                {
+                    "name": "Erwin Schrödinger",
+                    "image": "erwin"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Akechi Mitsuhide",
+                    "image": "akechi"
+                }
+            ],
+            "description": "Hasan is not doing as much damage as Hanzo's skill or hyper attack but in return she attacks every round. Her damage is still pretty solid."
+        },
+        {
+            "index": 3,
+            "heroes": [
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                },
+                {
+                    "name": "Erwin Schrödinger",
+                    "image": "erwin"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Zorro",
+                    "image": "zorro"
+                }
+            ],
+            "description": "The shield you get from the Athena's Faction Bonus is pretty nice. Combined with Jeanne's row damage is a pretty decent starter team."
+        },
+        {
+            "index": 4,
+            "heroes": [
+                {
+                    "name": "Hattori Hanzo",
+                    "image": "hanzo"
+                },
+                {
+                    "name": "Akechi Mitsuhide",
+                    "image": "akechi"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Zorro",
+                    "image": "zorro"
+                }
+            ],
+            "description": "Hanzo is able to do the same amount of damage as SS heroes, the only downside is that she needs to charge her skill/hyper attack for one round."
+        },
+        {
+            "index": 5,
+            "heroes": [
+                {
+                    "name": "Yi Sun-sin",
+                    "image": "yi-sun"
+                },
+                {
+                    "name": "Erwin Schrödinger",
+                    "image": "erwin"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Akechi Mitsuhide",
+                    "image": "akechi"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 6,
+            "heroes": [
+                {
+                    "name": "Cleopatra",
+                    "image": "cleopatra"
+                },
+                {
+                    "name": "Erwin Schrödinger",
+                    "image": "erwin"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Zorro",
+                    "image": "zorro"
+                }
+            ],
+            "description": "Cleopatra is not as good as Jeanne but still pretty good compared to some other S heroes."
+        },
+        {
+            "index": 7,
+            "heroes": [
+                {
+                    "name": "Hattori Hanzo",
+                    "image": "hanzo"
+                },
+                {
+                    "name": "Hasan",
+                    "image": "hasan"
+                },
+                {
+                    "name": "Zorro",
+                    "image": "zorro"
+                },
+                {
+                    "name": "Erwin Schrödinger",
+                    "image": "erwin"
+                }
+            ],
+            "description": "If build right all except Zorro will focus the lowest HP enemy which makes this a pretty efficient team."
+        },
+        {
+            "index": 8,
+            "heroes": [
+                {
+                    "name": "Hugo",
+                    "image": "hugo"
+                },
+                {
+                    "name": "Nicolaus Copernicus",
+                    "image": "nicolaus"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Erwin Schrödinger",
+                    "image": "erwin"
+                }
+            ],
+            "description": "Strong AoE."
+        },
+        {
+            "index": 9,
+            "heroes": [
+                {
+                    "name": "Yi Sun-sin",
+                    "image": "yi-sun"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Zorro",
+                    "image": "zorro"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 10,
+            "heroes": [
+                {
+                    "name": "Cleopatra",
+                    "image": "cleopatra"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                },
+                {
+                    "name": "Zorro",
+                    "image": "zorro"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 11,
+            "heroes": [
+                {
+                    "name": "Homer",
+                    "image": "homer"
+                },
+                {
+                    "name": "Yi Sun-sin",
+                    "image": "yi-sun"
+                },
+                {
+                    "name": "Akechi Mitsuhide",
+                    "image": "akechi"
+                },
+                {
+                    "name": "George Patton",
+                    "image": "george"
+                }
+            ],
+            "description": "Homer's hyper attack is a shield for your team. This can sometimes be a lifesaver."
+        }
+    ],
+    "decent": [
+        {
+            "index": 0,
+            "heroes": [
+                {
+                    "name": "Hugo",
+                    "image": "hugo"
+                },
+                {
+                    "name": "Nicolaus Copernicus",
+                    "image": "nicolaus"
+                },
+                {
+                    "name": "Hasan",
+                    "image": "hasan"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                }
+            ],
+            "description": "Strong AoE comp. And with 3x Ouroboros your heroes might cast their skill/hyper attack twice in a row."
+        },
+        {
+            "index": 1,
+            "heroes": [
+                {
+                    "name": "Hugo",
+                    "image": "hugo"
+                },
+                {
+                    "name": "Nicolaus Copernicus",
+                    "image": "nicolaus"
+                },
+                {
+                    "name": "Cleopatra",
+                    "image": "cleopatra"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                }
+            ],
+            "description": "Strong AoE comp. And with 2x Athena's your heroes get a 20% max. HP shield so they can survive longer."
+        },
+        {
+            "index": 2,
+            "heroes": [
+                {
+                    "name": "Elizabeth Báthory",
+                    "image": "elizabeth"
+                },
+                {
+                    "name": "Hasan",
+                    "image": "hasan"
+                },
+                {
+                    "name": "Hattori Hanzo",
+                    "image": "hanzo"
+                },
+                {
+                    "name": "Erwin Schrödinger",
+                    "image": "erwin"
+                }
+            ],
+            "description": "Higher damage output but no AoE damage."
+        },
+        {
+            "index": 3,
+            "heroes": [
+                {
+                    "name": "Hercules",
+                    "image": "hercules"
+                },
+                {
+                    "name": "Yi Sun-sin",
+                    "image": "yi-sun"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                },
+                {
+                    "name": "Zorro",
+                    "image": "zorro"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 4,
+            "heroes": [
+                {
+                    "name": "Frédéric Chopin",
+                    "image": "chopin"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                },
+                {
+                    "name": "Cleopatra",
+                    "image": "cleopatra"
+                },
+                {
+                    "name": "Hugo",
+                    "image": "hugo"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 5,
+            "heroes": [
+                {
+                    "name": "Alexander the Great",
+                    "image": "alexander"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                },
+                {
+                    "name": "Nicolaus Copernicus",
+                    "image": "nicolaus"
+                },
+                {
+                    "name": "Hasan",
+                    "image": "hasan"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 6,
+            "heroes": [
+                {
+                    "name": "Oda Nobunaga",
+                    "image": "nobunaga"
+                },
+                {
+                    "name": "Nicolaus Copernicus",
+                    "image": "nicolaus"
+                },
+                {
+                    "name": "Hugo",
+                    "image": "hugo"
+                },
+                {
+                    "name": "Yi Sun-sin",
+                    "image": "yi-sun"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 7,
+            "heroes": [
+                {
+                    "name": "Helen of Troy",
+                    "image": "helen"
+                },
+                {
+                    "name": "Paris",
+                    "image": "paris"
+                },
+                {
+                    "name": "Homer",
+                    "image": "homer"
+                },
+                {
+                    "name": "Yi Sun-sin",
+                    "image": "yi-sun"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 8,
+            "heroes": [
+                {
+                    "name": "Cervantes",
+                    "image": "cervantes"
+                },
+                {
+                    "name": "Hercules",
+                    "image": "hercules"
+                },
+                {
+                    "name": "Yi Sun-sin",
+                    "image": "yi-sun"
+                },
+                {
+                    "name": "Hasan",
+                    "image": "hasan"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 9,
+            "heroes": [
+                {
+                    "name": "Oda Nobunaga",
+                    "image": "nobunaga"
+                },
+                {
+                    "name": "Alfred Nobel",
+                    "image": "alfred"
+                },
+                {
+                    "name": "Nicolaus Copernicus",
+                    "image": "nicolaus"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 10,
+            "heroes": [
+                {
+                    "name": "Frédéric Chopin",
+                    "image": "chopin"
+                },
+                {
+                    "name": "Alexander the Great",
+                    "image": "alexander"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                },
+                {
+                    "name": "Yi Sun-sin",
+                    "image": "yi-sun"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 11,
+            "heroes": [
+                {
+                    "name": "Cervantes",
+                    "image": "cervantes"
+                },
+                {
+                    "name": "Hercules",
+                    "image": "hercules"
+                },
+                {
+                    "name": "Elizabeth Báthory",
+                    "image": "elizabeth"
+                },
+                {
+                    "name": "Florence Nightingale",
+                    "image": "nightingale"
+                }
+            ],
+            "description": "In this comp you want to give Wind Totem Passive to all SS heroes. The splash damage from Wind Totem can easily kill enemy heroes besides the target."
+        },
+        {
+            "index": 12,
+            "heroes": [
+                {
+                    "name": "Frédéric Chopin",
+                    "image": "chopin"
+                },
+                {
+                    "name": "Alexander the Great",
+                    "image": "alexander"
+                },
+                {
+                    "name": "Oda Nobunaga",
+                    "image": "nobunaga"
+                },
+                {
+                    "name": "Hugo",
+                    "image": "hugo"
+                }
+            ],
+            "description": "One of the strongest SS teams."
+        },
+        {
+            "index": 13,
+            "heroes": [
+                {
+                    "name": "Helen of Troy",
+                    "image": "helen"
+                },
+                {
+                    "name": "Paris",
+                    "image": "paris"
+                },
+                {
+                    "name": "Alexander the Great",
+                    "image": "alexander"
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "image": "jeanne"
+                }
+            ],
+            "description": ""
+        }
+    ],
+    "whale": [
+        {
+            "index": 0,
+            "heroes": [
+                {
+                    "name": "Guanyu",
+                    "image": "guanyu"
+                },
+                {
+                    "name": "Paris",
+                    "image": "paris"
+                },
+                {
+                    "name": "Helen of Troy",
+                    "image": "helen"
+                },
+                {
+                    "name": "Alexander the Great",
+                    "image": "alexander"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 1,
+            "heroes": [
+                {
+                    "name": "Dante Alighieri",
+                    "image": "dante"
+                },
+                {
+                    "name": "Hercules",
+                    "image": "hercules"
+                },
+                {
+                    "name": "Frédéric Chopin",
+                    "image": "chopin"
+                },
+                {
+                    "name": "Alexander the Great",
+                    "image": "alexander"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 2,
+            "heroes": [
+                {
+                    "name": "Morgan le Fay",
+                    "image": "morgan"
+                },
+                {
+                    "name": "Frédéric Chopin",
+                    "image": "chopin"
+                },
+                {
+                    "name": "Alexander the Great",
+                    "image": "alexander"
+                },
+                {
+                    "name": "Oda Nobunaga",
+                    "image": "nobunaga"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 3,
+            "heroes": [
+                {
+                    "name": "Solomon",
+                    "image": "solomon"
+                },
+                {
+                    "name": "Oda Nobunaga",
+                    "image": "nobunaga"
+                },
+                {
+                    "name": "Alfred Nobel",
+                    "image": "alfred"
+                },
+                {
+                    "name": "Frédéric Chopin",
+                    "image": "chopin"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 4,
+            "heroes": [
+                {
+                    "name": "Dante Alighieri",
+                    "image": "dante"
+                },
+                {
+                    "name": "Guanyu",
+                    "image": "guanyu"
+                },
+                {
+                    "name": "Hercules",
+                    "image": "hercules"
+                },
+                {
+                    "name": "Paris",
+                    "image": "paris"
+                }
+            ],
+            "description": ""
+        },
+        {
+            "index": 5,
+            "heroes": [
+                {
+                    "name": "Morgan le Fay",
+                    "image": "morgan"
+                },
+                {
+                    "name": "Solomon",
+                    "image": "solomon"
+                },
+                {
+                    "name": "Frédéric Chopin",
+                    "image": "chopin"
+                },
+                {
+                    "name": "Oda Nobunaga",
+                    "image": "nobunaga"
+                }
+            ],
+            "description": ""
+        }
+    ]
+}

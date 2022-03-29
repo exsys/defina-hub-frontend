@@ -1,0 +1,18 @@
+<div class="exp-table-container">
+    <div class="light-border">
+        <table>
+            <tr>
+                <th>Level</th>
+                <th>EXP needed</th>
+                <th>Cumulated EXP</th>
+                <th>Potions</th>
+            </tr>
+            <tr *ngFor="let level of expTable" [class.light-background]="level.level % 5 === 0 && level.level !== 5">
+                <td>{{ level.level }}</td>
+                <td>{{ level.exp }}</td>
+                <td>{{ level.cumulated }}</td>
+                <td *ngIf="level.potions">{{ level.potions }}</td>
+            </tr>
+        </table>
+    </div>
+</div>

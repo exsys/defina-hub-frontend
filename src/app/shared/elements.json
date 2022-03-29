@@ -1,0 +1,270 @@
+{
+    "main": [
+        {
+            "name": "Wind Totem",
+            "element": "Wind",
+            "bonusOne": "Wind blessed heroes gain 30 speed",
+            "bonusTwo": "All team members attack twice on the first round"
+        },
+        {
+            "name": "Fire Totem",
+            "element": "Fire",
+            "bonusOne": "The main element will have a 15% heal/attack bonus when attacking targets with less than 30% HP.",
+            "bonusTwo": "All heroes will receive a 15% attack/heal bonus."
+        },
+        {
+            "name": "Water Totem",
+            "element": "Water",
+            "bonusOne": "Water blessed heroes restore 5% HP every round.",
+            "bonusTwo": "Any hero that falls below 50% of their max HP after an enemy attack will have their health restored 20% of their max HP and be given extra 20 energy. Each hero can only trigger once for the entire battle."
+        },
+        {
+            "name": "Lightning Totem",
+            "element": "Lightning",
+            "bonusOne": "Lightning blessed heroes receive an additional 20 Energy at the start of battle.",
+            "bonusTwo": "All heroes receive an additional 20 Energy at the start of battle.",
+            "dominant": "Lightning dominant heroes' basic attack generates additional 5 energy."
+        },
+        {
+            "name": "Earth Totem",
+            "element": "Earth",
+            "bonusOne": "Earth blessed heroes and its allies on the same row take 10% less damage.",
+            "bonusTwo": "All members damage taken are reduced by 10%.",
+            "dominant": "Shielded Earth dominant hero can life steal from enemy 25% of hero's attack."
+        }
+    ],
+    "skill": [
+        {
+            "name": "none",
+            "element": "none",
+            "descrAttack": "N/A",
+            "descrPassive": "N/A"
+        },
+        {
+            "name": "Breeze",
+            "element": "Wind",
+            "descrAttack": "20% increased attack or healing effects if Hero's speed is greater than 90 + (18 * Hero level).",
+            "descrPassive": "Each attack decreases enemy's speed by 5 and increases the hero's speed by 5. Lasts for the duration of the battle. Stackable.",
+            "skillBonus": {
+                "scaling": 20,
+                "type": 0
+            },
+            "requirement": {
+                "skill": "attack",
+                "type": 0
+            }
+        },
+        {
+            "name": "Tornado",
+            "element": "Wind",
+            "descrAttack": "20% increased chance of activating Hyper skill if the hero's speed is greater than 90 + (18 * Hero level). This effect lasts until the end of the next round.",
+            "descrPassive": "Hyper Skill triggering rate is increased by 30%.",
+            "requirement": {
+                "skill": "attack",
+                "type": 0
+            }
+        },
+        {
+            "name": "Whirlwind",
+            "element": "Wind",
+            "descrAttack": "15% chance of an additional attack if target's main element is fire.",
+            "descrPassive": "This hero will have a 10% chance to counterattack when attacked by an enemy with a fire main element.",
+            "skillBonus": {
+                "type": 1
+            }
+        },
+        {
+            "name": "Wind Pressure",
+            "element": "Wind",
+            "descrAttack": "An attack has an additional 7.5% damage for each target that's affected. This effect doesn't apply to heal.",
+            "descrPassive": "This hero's attack damage or healing in the first round is increased by 30%.",
+            "skillBonus": {
+                "scaling": 7.5,
+                "type": 2
+            },
+            "passiveBonus": {
+                "scaling": 30,
+                "type": 0
+            }
+        },
+        {
+            "name": "Wind Totem",
+            "element": "Wind",
+            "descrAttack": "N/A",
+            "descrPassive": "When the hero's speed is greater than 90 + (18 * Hero level), 30% of the damage dealt to the main target will be splashed to surrounding enemies if Hero's speed is greater than 200. Stackable. Splash damage is nullified when the damage is fully absorbed by the shield of the main target. This element doesn't apply to healing.",
+            "passiveBonus": {
+                "scaling": 30,
+                "type": 3
+            },
+            "requirement": {
+                "skill": "passive",
+                "type": 0
+            }
+        },
+        {
+            "name": "Combustion",
+            "element": "Fire",
+            "descrAttack": "Applies debuff status [Burning]: HP will be decreased every round by 10% of the damage dealt by the hero when inflicted. Lasts for 3 rounds. Stackable on itself but non-stackable with other element effects.",
+            "descrPassive": "If the hero's current HP is greater than 20% at the beginning of the round, the hero gains 5% attack damage but loses 5% HP. Stackable and lasts for the duration of the battle.",
+            "skillBonus": {
+                "scaling": 10,
+                "type": 4
+            },
+            "passiveBonus": {
+                "scaling": 5,
+                "type": 0
+            }
+        },
+        {
+            "name": "Fire Totem",
+            "element": "Fire",
+            "descrAttack": "20% increased attack damage if target's HP is less than 50%.",
+            "descrPassive": "N/A",
+            "skillBonus": {
+                "scaling": 20,
+                "type": 0
+            }
+        },
+        {
+            "name": "Heart of Lava",
+            "element": "Fire",
+            "descrAttack": "This hero's damage is increased by 20% when attacking stunned target(s).",
+            "descrPassive": "5% chance to stun the attacker when being attacked. The effect lasts until the end of the next round.",
+            "skillBonus": {
+                "scaling": 20,
+                "type": 0
+            }
+        },
+        {
+            "name": "Ring of Fire I",
+            "element": "Fire",
+            "descrAttack": "50% healing reduction to the target if the target's main element is water. The effect lasts until the end of the next round.",
+            "descrPassive": "30% chance to deflect 50% of the damage if attacked by an enemy with a water main element."
+        },
+        {
+            "name": "Ring of Fire II",
+            "element": "Fire",
+            "descrAttack": "100% healing reduction to the target if the target's main element is water. The effect lasts until the end of the next round.",
+            "descrPassive": "30% chance to deflect 50% of the damage if attacked by an enemy with a water main element."
+        },
+        {
+            "name": "Scorching Sun",
+            "element": "Fire",
+            "descrAttack": "Inflicts additional damage to the target equal to 8% of its lost HP.",
+            "descrPassive": "Damage to enemies with a shield is increased by 30%.",
+            "skillBonus": {
+                "extra": "(+8% of lost HP)"
+            },
+            "passiveBonus": {
+                "scaling": 30,
+                "type": 0
+            }
+        },
+        {
+            "name": "Deep Water",
+            "element": "Water",
+            "descrAttack": "35% increase in attack damage or heal if Hero's energy is less than 50 before attacking.",
+            "descrPassive": "30% chance to restore 20 energy if attacked by enemy with a wind main element.",
+            "skillBonus": {
+                "scaling": 35,
+                "type": 0
+            }
+        },
+        {
+            "name": "Fountain of Life",
+            "element": "Water",
+            "descrAttack": "Removes 1 debuff and adds an additional 10% heal based on the amount that has already been healed in this round. The effect takes place at the end of the round and will last two rounds.",
+            "descrPassive": "At the end of each round, restore 8% of the overall lost HP."
+        },
+        {
+            "name": "Frost",
+            "element": "Water",
+            "descrAttack": "Target loses 40% of their current HP if the target's current HP is greater than 70%. Target recovers 25% of the lost 40% HP at the end of each round for 4 rounds. Element ignores Hero's shield and penetrates directly to Target's health.",
+            "descrPassive": "When attacked by an enemy, the enemy's speed will decrease by 100. The effect lasts until the end of the next round.",
+            "skillBonus": {
+                "extra": "(+40% max HP)"
+            }
+        },
+        {
+            "name": "Rainstorm",
+            "element": "Water",
+            "descrAttack": "Target loses 10 energy if target's HP is less than 50% after attacking.",
+            "descrPassive": "After the 8th round, all enemies lose 10 energy at the beginning of each round."
+        },
+        {
+            "name": "Water Totem",
+            "element": "Water",
+            "descrAttack": "Heals for 50% of hero's ATK stats if total HP is less than 50% after attacking.",
+            "descrPassive": "N/A"
+        },
+        {
+            "name": "High Pressure 1",
+            "element": "Lightning",
+            "descrAttack": "20% increased attack damage if the target's HP is greater than 80%.",
+            "descrPassive": "N/A",
+            "skillBonus": {
+                "scaling": 20,
+                "type": 0
+            }
+        },
+        {
+            "name": "High Pressure 2",
+            "element": "Lightning",
+            "descrAttack": "After a critical strike, the damage of the next attack is increased by 15%.",
+            "descrPassive": "N/A"
+        },
+        {
+            "name": "Lightning 1",
+            "element": "Lightning",
+            "descrAttack": "20% chance of critical strike if Hero's HP is less than 50%.",
+            "descrPassive": "N/A"
+        },
+        {
+            "name": "Lightning 2",
+            "element": "Lightning",
+            "descrAttack": "15% chance to stun the target, the stun chance doubles if the attack is a critical strike. The effect lasts until the end of the next round.",
+            "descrPassive": "N/A"
+        },
+        {
+            "name": "Lightning Totem",
+            "element": "Lightning",
+            "descrAttack": "The hero's critical strike chance increases by 25% if the target's HP is less than 50%.",
+            "descrPassive": "If the critical point is greater than 1000, the exceeding critical point will be converted to critical damage at the ratio of 1 critical point = 0.2% critical damage.",
+            "passiveBonus": {
+                "type": 5
+            }
+        },
+        {
+            "name": "Desert 1",
+            "element": "Earth",
+            "descrAttack": "Target loses 5 energy if target does not have a shield.",
+            "descrPassive": "N/A"
+        },
+        {
+            "name": "Desert 2",
+            "element": "Earth",
+            "descrAttack": "15% increased attack damage or healing effect if target's energy is 0.",
+            "descrPassive": "N/A",
+            "skillBonus": {
+                "scaling": 15,
+                "type": 0
+            }
+        },
+        {
+            "name": "Earth Totem",
+            "element": "Earth",
+            "descrAttack": "Hero gains a shield that absorbs 10% of the hero's max HP if HP is less than 50% after an attack. The effect lasts until the end of the next round.",
+            "descrPassive": "N/A"
+        },
+        {
+            "name": "Mountain Range",
+            "element": "Earth",
+            "descrAttack": "30% increased attack damage or healing effect if the skill is used on one single target.",
+            "descrPassive": "Shield absorption effect is increased by 30%.",
+            "skillBonus": {
+                "scaling": 30,
+                "type": 0
+            }
+        }
+    ]
+}

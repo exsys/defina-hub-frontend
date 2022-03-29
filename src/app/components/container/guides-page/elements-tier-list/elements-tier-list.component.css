@@ -1,0 +1,41 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    margin-bottom: 0.5em;
+    width: 33%;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 0.25em;
+}
+
+li:hover {
+    color: #e6d29d;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.elements-tierlist-navbar {
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.selected  {
+    color: #e6d29d;
+    box-shadow: 0 0 13px 2px #7a7a7a96;
+}
+
+@media (min-width: 576px) {
+    li {
+        padding: 0.5em 1em;
+    }
+}

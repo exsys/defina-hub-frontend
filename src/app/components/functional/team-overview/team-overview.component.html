@@ -1,0 +1,47 @@
+<div>
+    <div class="border-b">
+        <h5>Overview </h5>
+        <app-tooltip [tooltipText]="tooltips.overview"></app-tooltip>
+    </div>
+    <div class="border-b team-overview-container">
+        <h6>Team Overview</h6>
+        <div class="team-bonus-overview">
+            <p *ngIf="storage.prometheus > 0">{{ storage.prometheus }}x Prometheus Fire</p>
+            <p *ngIf="storage.thots > 0">{{ storage.thots }}x Thot's Book</p>
+            <p *ngIf="storage.aegis > 0">{{ storage.aegis }}x Athena's Aegis</p>
+            <p *ngIf="storage.ouroboros > 0">{{ storage.ouroboros }}x Ouroboros</p>
+            <p *ngIf="storage.wind > 0">{{ storage.wind }}x Wind (+{{ storage.getWindMainSpeed() }} Team speed)</p>
+            <p *ngIf="storage.fire > 0">{{ storage.fire }}x Fire (+{{ storage.fire * 8 }}% Team attack)</p>
+            <p *ngIf="storage.water > 0">{{ storage.water }}x Water (+{{ storage.water * 10 }}% Team healing effect)</p>
+            <p *ngIf="storage.lightning > 0">{{ storage.lightning }}x Lightning (+{{ storage.lightning * 8 }}% Team crit. chance)</p>
+            <p *ngIf="storage.earth > 0">{{ storage.earth }}x Earth (+{{ storage.earth * 8 }}% Team HP increase)</p>
+            <p *ngIf="storage.natureBlessed > 0">{{ storage.natureBlessed }}x Nature Blessed (10% increased chance of activating Hyper skill)</p>
+        </div>
+    </div>
+
+    <div class="hero-stats-container">
+        <h6 style="display: inline">Heroes </h6>
+        <app-tooltip [tooltipText]="tooltips.heroOverview"></app-tooltip>
+        <div class="hero-overview-container">
+            <h6 *ngIf="storage.team[0] != undefined">Hero 1: {{ storage.team[0].name }} </h6>
+            <div class="hero-overview-wrapper" *ngIf="storage.team[0] != undefined">
+                <app-hero-overview [heroNumber]="0"></app-hero-overview>
+            </div>
+
+            <h6 *ngIf="storage.team[1] != undefined">Hero 2: {{ storage.team[1].name }} </h6>
+            <div class="hero-overview-wrapper" *ngIf="storage.team[1] != undefined">
+                <app-hero-overview [heroNumber]="1"></app-hero-overview>
+            </div>
+
+            <h6 *ngIf="storage.team[2] != undefined">Hero 3: {{ storage.team[2].name }} </h6>
+            <div class="hero-overview-wrapper" *ngIf="storage.team[2] != undefined">
+                <app-hero-overview [heroNumber]="2"></app-hero-overview>
+            </div>
+
+            <h6 *ngIf="storage.team[3] != undefined">Hero 4: {{ storage.team[3].name }} </h6>
+            <div class="hero-overview-wrapper" *ngIf="storage.team[3] != undefined">
+                <app-hero-overview [heroNumber]="3"></app-hero-overview>
+            </div>
+        </div>
+    </div>
+</div>

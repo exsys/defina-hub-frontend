@@ -1,0 +1,89 @@
+<div class="container-fluid">
+
+    <div class="donation-container">
+        <p>
+            Hello Definians! This website is a personal project created by Exsys and made for the community of the game Defina Finance.
+            I'll keep working on the site and will be adding new tools in the future.
+            If you enjoy the work and want to support this project I'd be happy about a small donation.
+            <img src="assets/images/MorganleFayLOVE.png" alt="MorganleFayLOVE" title="MorganleFayLOVE" style="width: 40px; height: 40px;"> 
+            <span class="ms-3" style="color: #e6d29d;">0x2A619a181C0386ad26f997a45b2C9C14eB096fa5</span>
+        </p>
+        <p>You can also support me by using my invitation code when creating a new account: <span style="color: #e6d29d;">8JWCTEHGC6</span></p>
+        <p>
+            If you have any suggestions about what you'd like to be added on Defina Hub in the future send me a suggestion at
+            the "Suggestion" tab.
+        </p>
+    </div>
+
+    <div class="d-flex flex-row save-load-container mx-auto">
+        <app-button-classic [buttonText]="'Save'" (buttonClick)="saveTeam()"></app-button-classic>
+        <app-button-classic [buttonText]="'Load'" (click)="teamUpload.click()"></app-button-classic>
+    </div>
+
+    <div class="border-wrapper mx-auto">
+        <div class="team-builder-wrapper d-flex flex-column">
+            
+            <input type="file" class="d-none" (change)="loadTeam($event)" #teamUpload>
+
+            <ul class="selection-container-mobile">
+                <li *ngFor="let tab of tabList" [class.selected-tab]="tab.toLowerCase() === selected.toLowerCase()"
+                    (click)="changeTab(tab)"> {{ tab }} </li>
+            </ul>
+
+            <div [hidden]="selected.toLowerCase() !== 'stats'">
+                <div class="d-flex flex-row">
+                    <div class="overview-container flex-column">
+                        <app-team-overview></app-team-overview>
+                    </div>
+
+                    <div class="team-builder-container">
+                        <div class="hero-container">
+                            <app-hero-selection-container [heroNumber]=0 (speedUpdate)="recheckRequirement()"></app-hero-selection-container>
+                        </div>
+                        <div class="hero-container">
+                            <app-hero-selection-container [heroNumber]=1 (speedUpdate)="recheckRequirement()"></app-hero-selection-container>
+                        </div>
+                        <div class="hero-container">
+                            <app-hero-selection-container [heroNumber]=2 (speedUpdate)="recheckRequirement()"></app-hero-selection-container>
+                        </div>
+                        <div class="hero-container">
+                            <app-hero-selection-container [heroNumber]=3 (speedUpdate)="recheckRequirement()"></app-hero-selection-container>
+                        </div>
+                    </div>
+
+                    <div class="description-output-container">
+                        <div class="description-container d-inline-block">
+                            <app-description-container></app-description-container>
+                        </div>
+
+                        <div class="output-container">
+                            <app-hero-damage-output></app-hero-damage-output>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div [hidden]="selected.toLowerCase() !== 'overview'">
+                <div class="overview-container-mobile d-flex flex-column">
+                    <app-team-overview></app-team-overview>
+                </div>
+            </div>
+
+            <div [hidden]="selected.toLowerCase() !== 'damage'">
+                <div class="output-container-mobile">
+                    <app-hero-damage-output></app-hero-damage-output>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <div class="work-in-progress-container">
+        
+    </div>
+    <br>
+    <br>
+    <br>
+
+</div>

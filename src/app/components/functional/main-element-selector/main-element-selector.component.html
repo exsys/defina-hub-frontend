@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center">
+    <div class="main-element-icon-container" (click)="toggleVisibility()">
+        <img src="assets/images/{{ currentElement }}-totem.png" alt="{{ currentElement }}" 
+            *ngIf="currentElement !== 'none'" (mouseover)="changeDescription()">
+    </div>
+    <div class="element-selection-list" [class.show-content]="showToggle===true" [isVisible]="showToggle" (clickOutside)="close()">
+        <ul>
+            <li *ngFor="let element of elementList" (click)="selectElement(element)">
+                <div class="list-item-container">
+                    <img class="list-icon" src="assets/images/{{getImageName(element.name)}}.png" alt="skill element">
+                    <span class="element-name text-center">{{ element.element }}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

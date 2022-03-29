@@ -1,0 +1,171 @@
+{
+    "basic": {
+        "aoe": {
+            "s": [
+                { "name": "Deep Water", "image": "deep-water", "ranking": "S", "notes": "This is the best pure damage buff you can get for your basic attack that will always be active." },
+                { "name": "Frost", "image": "frost", "ranking": "S", "notes": "If you put this ability on a big AoE attack that hits early you can put all of your enemies to below 30-40% HP immediately which means you will likely be able to kill them off with your other heroes in the same round. (Assuming your Frost hero goes first)" }
+            ],
+            "a": [
+                { "name": "Breeze", "image": "breeze", "ranking": "A", "notes": "It's difficult to reach the required minimum speed if not placed in a 4 wind team or on a SSS. Therefore, another element might be better. Else it has a pretty decent damage bonus." },
+                { "name": "Fire Totem", "image": "fire-totem", "ranking": "A", "notes": "Decent damage bonus. Pretty good if you use it on a cleanup Hero." }
+            ],
+            "b": [
+                { "name": "Wind Pressure", "image": "wind-pressure", "ranking": "B", "notes": "Only strong when hero hits atleast 3 enemies. Since most heroes don't hit that many heroes with their basic attack it's outclassed by other elements." },
+                { "name": "Tornado", "image": "tornado", "ranking": "B", "notes": "Might be good in some comps but most of the time it's not really worth going for." },
+                { "name": "Scorching Sun", "image": "scorching-sun", "ranking": "B", "notes": "Good if you play against high HP enemies (A tier if you play against SS or SSS teams). In most cases S and A heroes will already be dead once the damage starts getting notable." },
+                { "name": "Rainstorm", "image": "rainstorm", "ranking": "B", "notes": "Good counter against lightning teams when played on a high speed hero. Can be A tier when played right. But not as good as on Skill/Hyper since not a lot of heroes have good AoE on their Basic." },
+                { "name": "Water Totem", "image": "water-totem", "ranking": "B", "notes": "If you can't get a good damage element then this might be a good alternative until you do. Since it's water you also can get Nature blessed." },
+                { "name": "High Pressure 1", "image": "high-pressure-1", "ranking": "B", "notes": "Most of the time it will only be useful in the first round. So not as good as the one's in A tier." },
+                { "name": "Lightning 2", "image": "lightning-2", "ranking": "B", "notes": "Could be decent in some AoE comps. Else it's probably not so good." },
+                { "name": "Desert 1", "image": "desert-1", "ranking": "B", "notes": "Same like Rainstorm but Rainstorm is a little bit better since a lot of players get a shield through 2x Athena's." },
+                { "name": "Earth Totem", "image": "earth-totem", "ranking": "B", "notes": "The shield might be pretty handy and could potentially save your Hero." }
+            ],
+            "c": [
+                { "name": "Combustion", "image": "combustion", "ranking": "C", "notes": "This ability gets outdone by any ability that gives 20%+ damage due to rounds not lasting long enough to make it worth it." },
+                { "name": "Heart of Lava", "image": "heart-of-lava", "ranking": "C", "notes": "There are not many cases where enemy hero gets stunned so not really worth going for." },
+                { "name": "High Pressure 2", "image": "high-pressure-2", "ranking": "C", "notes": "damage bonus is lower than most alternatives." },
+                { "name": "Lightning 1", "image": "lightning-1", "ranking": "C", "notes": "You would only need it if your Hero has a really low crit chance. Since non-A heroes have a decent base crit chance it's not really worth going for." },
+                { "name": "Lightning Totem", "image": "lightning-totem", "ranking": "C", "notes": "A little bit better than Lightning 1 but still bad overall." },
+                { "name": "Desert 2", "image": "desert-2", "ranking": "C", "notes": "Low bonus damage and bad requirement." }
+            ],
+            "f": [
+                { "name": "Whirlwind", "image": "whirlwind", "ranking": "F", "notes": "Only few people play fire on main element and percentage is pretty low. So pretty bad overall." },
+                { "name": "Ring of Fire I", "image": "ring-of-fire-i", "ranking": "F", "notes": "yeah... just don't. Same goes for Ring of Fire II." },
+                { "name": "Fountain of Life", "image": "fountain-of-life", "ranking": "F", "notes": "Effect is pretty much useless." },
+                { "name": "Mountain Range", "image": "mountain-range", "ranking": "F", "notes": "I don't have to tell you, do I?" }
+            ]
+        },
+        "single": {
+            "s": [
+                { "name": "Deep Water", "image": "deep-water", "ranking": "S", "notes": "This is the best pure damage buff you can get for your basic attack that will always be active." },
+                { "name": "Frost", "image": "frost", "ranking": "S", "notes": "In most cases the enemy will lose 50%+ max HP in the first round which makes it easier for you non-frost heroes to cleanup. You probably want your Frost hero to go first since it's effect will only trigger when enemy has more than 70% HP left." }
+            ],
+            "a": [
+                { "name": "Mountain Range", "image": "mountain-range", "ranking": "A", "notes": "Consistent damage that is always active. Actually S tier when it comes to damage but you won't be able to get nature blessed with it so it's only A tier." }
+            ],
+            "b": [
+                { "name": "Breeze", "image": "breeze", "ranking": "B", "notes": "It's difficult to reach the required minimum speed if not placed in a 4 wind team or on a SSS. Therefore, another element might be better. Not really good on single target since there are better alternatives." },
+                { "name": "Tornado", "image": "tornado", "ranking": "B", "notes": "Might be good in some comps but most of the time it's not really worth going for." },
+                { "name": "Fire Totem", "image": "fire-totem", "ranking": "B", "notes": "Decent damage bonus. But not as good as on AoE skills." },
+                { "name": "Rainstorm", "image": "rainstorm", "ranking": "C", "notes": "Good counter against lightning teams when played on a high speed hero. Better on AoE skills because effect can trigger on several enemies." },
+                { "name": "Water Totem", "image": "water-totem", "ranking": "B", "notes": "If you can't get a good damage element then this might be a good alternative until you do. Since it's water you also can get Nature blessed." },
+                { "name": "Desert 1", "image": "desert-1", "ranking": "C", "notes": "Same like Rainstorm but Rainstorm is a little bit better since a lot of players get a shield through 2x Athena's." },
+                { "name": "Earth Totem", "image": "earth-totem", "ranking": "B", "notes": "The shield might be pretty handy and could potentially save your Hero." }
+            ],
+            "c": [
+                { "name": "Scorching Sun", "image": "scorching-sun", "ranking": "C", "notes": "Same as AoE but worse because you hit less enemies." },
+                { "name": "Heart of Lava", "image": "heart-of-lava", "ranking": "C", "notes": "There are not many cases where enemy hero gets stunned so not really worth going for." },
+                { "name": "High Pressure 1", "image": "high-pressure-1", "ranking": "C", "notes": "Most of the time it will only be useful in the first round." },
+                { "name": "High Pressure 2", "image": "high-pressure-2", "ranking": "C", "notes": "damage bonus is lower than most alternatives." },
+                { "name": "Lightning 1", "image": "lightning-1", "ranking": "C", "notes": "You would only need it if your Hero has a really low crit chance. Since non-A heroes have a decent base crit chance it's not really worth going for." },
+                { "name": "Lightning 2", "image": "lightning-2", "ranking": "C", "notes": "Not really good in single target comps." },
+                { "name": "Lightning Totem", "image": "lightning-totem", "ranking": "C", "notes": "A little bit better than Lightning 1 but still bad overall." },
+                { "name": "Desert 2", "image": "desert-2", "ranking": "C", "notes": "Low bonus damage and bad requirement." }
+            ],
+            "f": [
+                { "name": "Wind Pressure", "image": "wind-pressure", "ranking": "F", "notes": "Will always only give you a 7.5% damage bonus which is really bad." },
+                { "name": "Whirlwind", "image": "whirlwind", "ranking": "F", "notes": "Only few people play fire on main element and percentage is pretty low. So pretty bad overall." },
+                { "name": "Combustion", "image": "combustion", "ranking": "F", "notes": "This ability gets outdone by any ability that gives 20%+ damage due to rounds not lasting long enough to make it worth it." },
+                { "name": "Ring of Fire I", "image": "ring-of-fire-i", "ranking": "F", "notes": "yeah... just don't. Same goes for Ring of Fire II." },
+                { "name": "Fountain of Life", "image": "fountain-of-life", "ranking": "F", "notes": "Effect is pretty much useless." }
+            ]
+        }
+    },
+    "skill": {
+        "aoe": {
+            "s": [
+                { "name": "Frost", "image": "frost", "ranking": "S", "notes": "If you put this ability on a big AoE attack that hits early you can put all of your enemies to below 30-40% HP immediately which means you will likely be able to kill them off with your other heroes in the same round. (Assuming your Frost hero goes first)" }
+            ],
+            "a": [
+                { "name": "Wind Pressure", "image": "wind-pressure", "ranking": "A", "notes": "Pretty strong if hero can hit atleast 3 heroes. Otherwise it's B tier." },
+                { "name": "Breeze", "image": "breeze", "ranking": "A", "notes": "It's difficult to reach the required minimum speed if not placed in a 4 wind team or on a SSS. Therefore, another element might be better. Else it has a pretty decent damage bonus." },
+                { "name": "Fire Totem", "image": "fire-totem", "ranking": "A", "notes": "Decent damage bonus. Pretty good if you use it on a cleanup Hero." },
+                { "name": "Rainstorm", "image": "rainstorm", "ranking": "A", "notes": "Good counter against lightning teams when played on a high speed hero. S tier for SSS heroes because they easily can pull this off since they have more base speed. Stacks with AoE" },
+                { "name": "Desert 1", "image": "desert-1", "ranking": "A", "notes": "Same like Rainstorm but Rainstorm is a little bit better since a lot of players get a shield through 2x Athena's." }
+            ],
+            "b": [
+                { "name": "Scorching Sun", "image": "scorching-sun", "ranking": "B", "notes": "Good if you play against high HP enemies (A tier if you play against SS or SSS teams). In most cases S and A heroes will already be dead once the damage starts getting notable." },
+                { "name": "High Pressure 1", "image": "high-pressure-1", "ranking": "B", "notes": "Most of the time it will only be useful in the first round. Might be enough in some comps." }
+            ],
+            "c": [
+                { "name": "Combustion", "image": "combustion", "ranking": "C", "notes": "This ability gets outdone by any ability that gives 20%+ damage due to rounds not lasting long enough to make it worth it." },
+                { "name": "Heart of Lava", "image": "heart-of-lava", "ranking": "C", "notes": "There are not many cases where enemy hero gets stunned so not really worth going for." },
+                { "name": "Water Totem", "image": "water-totem", "ranking": "C", "notes": "You rather want to get a damage element on your skill or hyper attack." },
+                { "name": "High Pressure 2", "image": "high-pressure-2", "ranking": "C", "notes": "damage bonus is lower than most alternatives." },
+                { "name": "Lightning 1", "image": "lightning-1", "ranking": "C", "notes": "You would only need it if your Hero has a really low crit chance. Since non-A heroes have a decent base crit chance it's not really worth going for." },
+                { "name": "Lightning 2", "image": "lightning-2", "ranking": "C", "notes": "You rather want to do as much damage as possible with your Skill and Hyper attack." },
+                { "name": "Lightning Totem", "image": "lightning-totem", "ranking": "C", "notes": "A little bit better than Lightning 1 but still bad overall." },
+                { "name": "Desert 2", "image": "desert-2", "ranking": "C", "notes": "Low bonus damage and bad requirement." },
+                { "name": "Earth Totem", "image": "earth-totem", "ranking": "C", "notes": "You rather want damage on Skill and Hyper." }
+            ],
+            "f": [
+                { "name": "Tornado", "image": "tornado", "ranking": "A", "notes": "Sadly it doesn't work for Skill and Hyper attack. With 3x Ouroboros you could make use of this effect but overall it's useless." },
+                { "name": "Whirlwind", "image": "whirlwind", "ranking": "F", "notes": "Only few people play fire on main element and percentage is pretty low. So pretty bad overall." },
+                { "name": "Ring of Fire I", "image": "ring-of-fire-i", "ranking": "F", "notes": "yeah... just don't. Same goes for Ring of Fire II." },
+                { "name": "Fountain of Life", "image": "fountain-of-life", "ranking": "F", "notes": "Effect is pretty much useless." },
+                { "name": "Mountain Range", "image": "mountain-range", "ranking": "F", "notes": "I don't have to tell you, do I?" }
+            ]
+        },
+        "single": {
+            "s": [
+                { "name": "Frost", "image": "frost", "ranking": "S", "notes": "Frost combined with a strong skill/hyper attack is able to oneshot an enemy. In most cases it will do over 70% damage to the enemy when combined with good stats. You probably want your Frost hero to go first since it's effect will only trigger when enemy has more than 70% HP left." },
+                { "name": "Mountain Range", "image": "mountain-range", "ranking": "A", "notes": "Consistent damage that is always active. Actually S tier when it comes to damage but you won't be able to get nature blessed with it so it's only A tier." }
+            ],
+            "a": [
+                { "name": "Breeze", "image": "breeze", "ranking": "B", "notes": "It's difficult to reach the required minimum speed if not placed in a 4 wind team or on a SSS. Therefore, another element might be better. Else it has a pretty decent damage bonus." },
+                { "name": "Fire Totem", "image": "fire-totem", "ranking": "B", "notes": "Decent damage bonus. Pretty good if you use it on a cleanup Hero." }
+            ],
+            "b": [
+                { "name": "Rainstorm", "image": "rainstorm", "ranking": "B", "notes": "Good counter against lightning teams when played on a high speed hero. S tier for SSS heroes because they easily can pull this off since they have more base speed." },
+                { "name": "Desert 1", "image": "desert-1", "ranking": "B", "notes": "Same like Rainstorm but Rainstorm is a little bit better since a lot of players get a shield through 2x Athena's." }
+            ],
+            "c": [
+                { "name": "Heart of Lava", "image": "heart-of-lava", "ranking": "C", "notes": "There are not many cases where enemy hero gets stunned so not really worth going for." },
+                { "name": "Scorching Sun", "image": "scorching-sun", "ranking": "C", "notes": "Same as AoE but worse because you hit less enemies." },
+                { "name": "Water Totem", "image": "water-totem", "ranking": "C", "notes": "You rather want to get a damage element on your skill or hyper attack." },
+                { "name": "High Pressure 1", "image": "high-pressure-1", "ranking": "C", "notes": "Most of the time it will only be useful in the first round." },
+                { "name": "High Pressure 2", "image": "high-pressure-2", "ranking": "C", "notes": "damage bonus is lower than most alternatives." },
+                { "name": "Lightning 1", "image": "lightning-1", "ranking": "C", "notes": "You would only need it if your Hero has a really low crit chance. Since non-A heroes have a decent base crit chance it's not really worth going for." },
+                { "name": "Lightning 2", "image": "lightning-2", "ranking": "C", "notes": "You rather want to do as much damage as possible with your Skill and Hyper attack." },
+                { "name": "Lightning Totem", "image": "lightning-totem", "ranking": "C", "notes": "A little bit better than Lightning 1 but still bad overall." },
+                { "name": "Desert 2", "image": "desert-2", "ranking": "C", "notes": "Low bonus damage and bad requirement." },
+                { "name": "Earth Totem", "image": "earth-totem", "ranking": "C", "notes": "You rather want damage on Skill and Hyper." }
+            ],
+            "f": [
+                { "name": "Tornado", "image": "tornado", "ranking": "A", "notes": "Sadly it doesn't work for Skill and Hyper attack. With 3x Ouroboros you could make use of this effect but overall it's useless." },
+                { "name": "Wind Pressure", "image": "wind-pressure", "ranking": "F", "notes": "Will always only give you a 7.5% damage bonus which is really bad." },
+                { "name": "Whirlwind", "image": "whirlwind", "ranking": "F", "notes": "Only few people play fire on main element and percentage is pretty low. So pretty bad overall." },
+                { "name": "Combustion", "image": "combustion", "ranking": "F", "notes": "This ability gets outdone by any ability that gives 20%+ damage due to rounds not lasting long enough to make it worth it." },
+                { "name": "Ring of Fire I", "image": "ring-of-fire-i", "ranking": "F", "notes": "yeah... just don't. Same goes for Ring of Fire II." },
+                { "name": "Fountain of Life", "image": "fountain-of-life", "ranking": "F", "notes": "Effect is pretty much useless." }
+            ]
+        }
+    },
+    "passive": {
+        "s": [
+            { "name": "Tornado", "image": "tornado", "ranking": "S", "notes": "Hyper skills are really powerful and game changing and this is an easy way to get a higher chance to do them. It's a coinflip but rewards you with extreme damage that often results in a win 1st or 2nd round." },
+            { "name": "Wind Totem", "image": "wind-totem", "ranking": "S", "notes": "It's difficult to reach the required minimum speed if not placed in a 4 wind team or on a SSS. Therefore, another element might be better. If you have enough speed, your Hero can deal up to 90% extra damage (spread across other living enemies) outperforming most other elements. Also works on AOE." },
+            { "name": "Wind Pressure", "image": "wind-pressure", "ranking": "S", "notes": "High consistent damage output when combined with 4x wind or a lightning comp. Only good if you can manage to defeat enemy team within the first 2 rounds otherwise this element is outclassed by other elements." }
+        ],
+        "a": [
+            { "name": "Fountain of Life", "image": "fountain-of-life", "ranking": "B", "notes": "Any Hero can benefit from it. Might even be A tier in some comps. Pretty good element until you get something better for passive." }
+        ],
+        "b": [
+            { "name": "Scorching Sun", "image": "scorching-sun", "ranking": "B", "notes": "Damage bonus is pretty good and since Athena's heroes are pretty popular it might be worth going for." },
+            { "name": "Deep Water", "image": "deep-water", "ranking": "B", "notes": "To be honest this one is a little bit tricky. 4x wind teams are pretty popular but probably not popular enough to make this element A tier. But it can potentially be pretty useful since it's possible to do a Skill/Hyper every round with this." },
+            { "name": "Mountain Range", "image": "mountain-range", "ranking": "B", "notes": "There are just not enough shield effects that justify this passive. On a Athena's team this might be usefull but overall it's just not that good." }
+        ],
+        "c": [
+            { "name": "Frost", "image": "frost", "ranking": "C", "notes": "This ability will have a low impact on the battle but it can potentially disrupt some teams and strategies." },
+            { "name": "Lightning Totem", "image": "lightning-totem", "ranking": "C", "notes": "Only SSS heroes will be able to make use of this element. For SSS heroes this could actually be S tier." }
+        ],
+        "f": [
+            { "name": "Breeze", "image": "breeze", "ranking": "F", "notes": "Speed effect is useless even if stacked over a few rounds." },
+            { "name": "Whirlwind", "image": "whirlwind", "ranking": "F", "notes": "Not many players go for fire main element. Combined with the low % chance this element is pretty useless." },
+            { "name": "Combustion", "image": "combustion", "ranking": "F", "notes": "Round will already be over until the damage bonus gets significant." },
+            { "name": "Heart of Lava", "image": "heart-of-lava", "ranking": "F", "notes": "Might somehow work in 3x Ouroboros but overall it's pretty much useless." },
+            { "name": "Ring of Fire I", "image": "ring-of-fire-i", "ranking": "F", "notes": "Not many players go for water main element. So this is pretty useless. Same goes for Ring of Fire II" },
+            { "name": "Rainstorm", "image": "rainstorm", "ranking": "F", "notes": "Most games are over after a few rounds so most of the time this effect will be useless." }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+
+.tooltip-text {
+    max-width: 210px;
+    background-color: rgb(63, 63, 63);
+    border: 1px solid gray;
+    border-radius: 0.25em;
+    padding: 10px;
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+}
+
+.tooltip-wrapper .tooltip-text {
+    visibility: hidden;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+    visibility: visible;
+}
+
+.smaller-font {
+    font-size: 0.75em;
+}
+
+@media (max-width: 576px) {
+    .tooltip-wrapper .tooltip-text {
+        right: 26%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .tooltip-wrapper .tooltip-text {
+        right: 22%;
+    }
+}

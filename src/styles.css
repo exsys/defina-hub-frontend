@@ -1,0 +1,45 @@
+* {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    color: rgb(211, 211, 211);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #222;
+}
+
+body, html {
+    height: 100%;
+    /* without overflow-x: hidden and position: relative the screen width on mobile would be wider than the html body
+    when collapsing the header. */
+    overflow-x: hidden;
+    position: relative;
+}
+
+.border-b {
+    border-bottom: 1px solid lightgray;
+}
+
+.aegis-border {
+    box-shadow: 0 0 13px 2px #82d85196!important;
+}
+
+.ouroboros-border {
+    box-shadow: 0 0 13px 2px #b750539d!important;
+}
+
+.thots-border {
+    box-shadow: 0 0 13px 2px #a971c8a4!important;
+}
+
+.prometheus-border {
+    box-shadow: 0 0 13px 2px #ffd77b7a!important;
+}

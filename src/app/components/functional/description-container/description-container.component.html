@@ -1,0 +1,9 @@
+<div class="cut-overflow">
+    <div class="border-b">
+        <h5>Description </h5>
+        <app-tooltip [tooltipText]="tooltips.description"></app-tooltip>
+    </div>
+    <h6 *ngIf="storage.element !== ''">{{ storage.element }}:</h6>
+    <span *ngIf="storage.requirement">{{ storage.requirement }}</span>
+    <p class="description"> {{ storage.description }} </p>
+</div>

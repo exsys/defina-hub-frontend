@@ -1,0 +1,31 @@
+<div class="hero-overview">
+
+    <p class="overview-item" title="ATK:">ATK:</p>
+    <p class="overview-item" title="{{getCorrectAtk()}}">{{ getCorrectAtk() }}</p>
+    <div class="allocation-container">
+        <div class="allocation-bar" [style.width.%]="getStatAllocation('attack')"></div>
+        <p class="stats-percentage" *ngIf="storage.teamComp[heroNumber].attack">{{ getStatAllocation("attack") }}%</p>
+    </div>
+
+    <p class="overview-item" title="HP:">HP:</p>
+    <p class="overview-item" title="{{getCorrectHp()}}">{{ getCorrectHp() }}</p>
+    <div class="allocation-container">
+        <div class="allocation-bar" [style.width.%]="getStatAllocation('health')"></div>
+        <p class="stats-percentage" *ngIf="storage.teamComp[heroNumber].health">{{ getStatAllocation("health") }}%</p>
+    </div>
+
+    <p class="overview-item" title="Speed:">Speed:</p>
+    <p class="overview-item" title="{{storage.teamComp[heroNumber].speed}}">{{ storage.teamComp[heroNumber].speed }}</p>
+    <div class="allocation-container">
+        <div class="allocation-bar" [style.width.%]="getStatAllocation('speed')"></div>
+        <p class="stats-percentage" *ngIf="storage.teamComp[heroNumber].speed">{{ getStatAllocation("speed") }}%</p>
+    </div>
+
+    <p class="overview-item" title="Speed:">Crit.</p>
+    <p class="overview-item" title="{{storage.teamComp[heroNumber].crit}}">{{ storage.teamComp[heroNumber].crit }}</p>
+    <div class="allocation-container">
+        <div class="allocation-bar" [style.width.%]="getStatAllocation('crit')"></div>
+        <p class="stats-percentage" *ngIf="storage.teamComp[heroNumber].crit">{{ getStatAllocation("crit") }}%</p>
+    </div>
+
+</div>

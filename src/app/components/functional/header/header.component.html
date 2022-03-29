@@ -1,0 +1,25 @@
+<div class="border-header">
+    <div class="container-fluid header-wrapper">
+        <div class="header-container mx-auto d-flex justify-content-between align-items-center">
+            <div class="logo-container">
+                <h1 (click)="closeNavbar()"><a routerLink="/">Defina Hub</a></h1>
+            </div>
+    
+            <div class="header-items-container flex-row">
+                <a routerLink="/guides">Guides</a>
+                <a routerLink="/contact">Suggestion</a>
+            </div>
+            <div class="navbar-toggle-mobile" [class.toggle-button]="showToggle === true" (click)="toggleNavbar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-collapse-mobile" [class.show-content]="showToggle === true">
+                <ul>
+                    <li><a routerLink="/guides" (click)="closeNavbar()">Guides</a></li>
+                    <li><a routerLink="/contact" (click)="closeNavbar()">Suggestion</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

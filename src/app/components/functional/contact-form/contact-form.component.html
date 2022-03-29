@@ -1,0 +1,31 @@
+<div class="border-wrapper">
+    <div class="suggestion-form-container">
+        <form [formGroup]="suggestionForm" (ngSubmit)="onSubmit()">
+            <!--<label for="discord-name">Discord name (optional) </label>
+            <app-tooltip [tooltipText]="'You don\'t need to enter your discord name. 
+                But it would be easier to get back to you if I\'ll have any questions about your suggestion.'"></app-tooltip>
+            <input type="text" placeholder="anon#0000" formControlName="discordName">-->
+            
+            <label for="suggestion-text">Suggestion</label>
+            <textarea placeholder="SSS wen? UwU" formControlName="suggestionText" rows="8"></textarea>
+
+            <div *ngIf="suggestionForm.controls['suggestionText'].touched && suggestionForm.controls['suggestionText'].errors?.required
+                && showAlert === false && showError === false">
+                <span class="text-danger">Suggestion field is required!</span>
+            </div>
+
+            <div class="alert alert-success alert-dismissible fade show" role="alert" [class.hide-content]="showAlert === false">
+                <p style="color: black;">Suggestion sent!</p>
+                <button type="button" class="btn-close" (click)="hideAlert()"></button>
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert" [class.hide-content]="showError === false">
+                <p style="color: black;">{{ errorMsg }}</p>
+                <button type="button" class="btn-close" (click)="hideError()"></button>
+            </div>
+
+            <div class="mt-3">
+                <button class="submit-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="heroes-recommendation-container">
+    <div class="recommendation-card" *ngFor="let team of currentTeamArray">
+        
+        <div class="images-container">
+            <img class="hero-recommendation-img" src="assets/images/{{hero.image}}.png" alt="{{hero.image}}" *ngFor="let hero of team.heroes">
+        </div>
+
+        <div class="recommendation-info">
+            <h6>Team:</h6><span *ngFor="let hero of team.heroes"> {{ capitalize(hero.image) }}<span *ngIf="hero !== team.heroes[3]">,</span> </span><br>
+            <!--<h6>Current floor price: </h6><span></span><br>-->
+            <h6>Notes:</h6><span> {{ team.description }}</span><br>
+            <div class="button-wrapper">
+                <app-button-classic [buttonText]="'Show in Teambuilder'" (buttonClick)="loadTeam(team.index)"></app-button-classic>
+            </div>
+        </div>
+    </div>
+</div>

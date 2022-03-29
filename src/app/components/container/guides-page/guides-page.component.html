@@ -1,0 +1,14 @@
+<div class="guides-page-container">
+    <div class="guides-navigation-sidebar">
+        <ul>
+            <li><a [routerLink]="['overview']" (click)="changeView('overview')"><h1 [class.selected]="selected === 'overview'">Overview</h1></a></li>
+            <li><a [routerLink]="['elements']" (click)="changeView('elements')"><h1 [class.selected]="selected === 'elements'">Element Tier List</h1></a></li>
+            <li><a [routerLink]="['teams']" (click)="changeView('teams')"><h1 [class.selected]="selected === 'teams'">Teams</h1></a></li>
+            <li><a [routerLink]="['exp']" (click)="changeView('exp')"><h1 [class.selected]="selected === 'exp'">Exp Table</h1></a></li>
+            <li><a [routerLink]="['ticker']" (click)="changeView('ticker')"><h1 [class.selected]="selected === 'ticker'">NFT Ticker</h1></a></li>
+        </ul>
+    </div>
+    <div class="guides-container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

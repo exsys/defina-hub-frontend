@@ -1,0 +1,23 @@
+
+p {
+    margin: 0;
+}
+
+h5 {
+    display: inline;
+}
+
+h6 {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.hero-stats-container {
+    margin-top: 0.5rem;
+}
+
+.team-bonus-overview {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}

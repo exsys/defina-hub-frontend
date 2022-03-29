@@ -1,0 +1,25 @@
+<div class="team-recommendation-container">
+    <h1>
+        Team Recommendations
+        <span>
+            <i class="far fa-question-circle tooltip-wrapper">
+                <span class="tooltip-text">
+                    You need atleast 4 heroes to be able to play the game. You can buy heroes on the official <a href="https://market.theforce.trade/market" target="_blank">Defina Marketplace</a>.
+                </span>
+            </i>
+        </span>
+    </h1>
+    <p class="mobile-hidden">There are way too many good teams so I can't include all comps here. Just because a team isn't listed here doesn't mean it isn't good. These are just recommendations to give you some ideas, so feel free to create your own versions of it or even stronger teams. Also sometimes it's better to go for several weaker teams instead of one strong team.</p>
+    <div class="team-recommendation-navbar">
+        <ul>
+            <li [class.selected]="selectedView === 'budget'" (click)="changeView('budget')">Low Budget Teams</li>
+            <li [class.selected]="selectedView === 'decent'" (click)="changeView('decent')">Decent Teams</li>
+            <li [class.selected]="selectedView === 'whale'" (click)="changeView('whale')">Whale Teams</li>
+        </ul>
+    </div>
+
+    <div class="team-recommendation-content">
+        <p *ngIf="selectedView === 'whale'">I'm not going to include much for SSS here since you can build pretty much anything with them.</p>
+        <app-team-recommendation [currentTeamArray]="recommendations[selectedView]" [currentView]="selectedView"></app-team-recommendation>
+    </div>
+</div>

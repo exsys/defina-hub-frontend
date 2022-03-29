@@ -1,0 +1,15 @@
+<div class="skill-dropdown-container">
+    <div class="skill-select-btn" (click)="toggleVisibility()">
+        <span *ngIf="selectedLevel">{{ selectedLevel.level }}</span>
+    </div>
+    <div class="skill-dropdown-list" [class.show-content]="showToggle === true" [isVisible]="showToggle" (clickOutside)="close()">
+        <ul>
+            <li *ngFor="let level of dropdownList" (click)="selectSkill(level)">
+                {{ level.level }}
+                <span *ngIf="storage.team[heroNumber]" class="skill-tooltip" [class.tooltip-mobile]="skillType === 'hyperAtk'">
+                    {{ storage.team[heroNumber][skillType].damage[level.index] }}% {{ storage.team[heroNumber][skillType].skillText[level.index] }}
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>

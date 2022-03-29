@@ -1,0 +1,22 @@
+<div class="border-b">
+    <h5>Damage </h5>
+    <app-tooltip [tooltipText]="tooltips.damage"></app-tooltip>
+</div>
+<div class="hero-number-selection">
+    <ul class="hero-selection-navbar">
+        <li *ngFor="let number of navbarList" [class.selected-number]="selected === number"
+            (click)="changeNumber(number)">{{number}}</li>
+    </ul>
+    <div [hidden]="selected !== '1'">
+        <app-hero-damage-display [heroNumber]="0"></app-hero-damage-display>
+    </div>
+    <div [hidden]="selected !== '2'">
+        <app-hero-damage-display [heroNumber]="1"></app-hero-damage-display>
+    </div>
+    <div [hidden]="selected !== '3'">
+        <app-hero-damage-display [heroNumber]="2"></app-hero-damage-display>
+    </div>
+    <div [hidden]="selected !== '4'">
+        <app-hero-damage-display [heroNumber]="3"></app-hero-damage-display>
+    </div>
+</div>

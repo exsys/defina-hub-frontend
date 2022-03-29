@@ -1,0 +1,87 @@
+<div class="card-info-container">
+    <div class="text-center">
+        <h1>Hero NFT Ticker <span>
+                <app-tooltip [tooltipText]="tooltips.ticker" [smallFont]="true"></app-tooltip>
+            </span></h1>
+    </div>
+
+    <div class="nft-ticker-navbar">
+        <ul>
+            <li [class.selected]="selectedView === 'hero'" (click)="changeView('hero')">Hero</li>
+            <li [class.selected]="selectedView === 'rarity'" (click)="changeView('rarity')">Rarity</li>
+        </ul>
+    </div>
+
+    <div class="card-info-content" *ngIf="selectedView === 'hero'">
+        <div class="card-info" *ngFor="let card of cardInfos"
+            [class.margin-bottom-big]="card.id === 3 || card.id === 10 || card.id === 18">
+            <div class="rarity-check" *ngIf="card.rarity !== 'S' && (card.rarity !== 'A' || card.name === 'Zorro')">
+
+                <div class="hero-name-container" [style.background-image]="'url(assets/images/' + card.image + '.png)'"
+                    [style.background-position]="'50% ' + card.percent + '%'"
+                    [class.SSS-border]="card.rarity === 'SSS'" [class.SS-border]="card.rarity === 'SS'"
+                    [class.A-border]="card.rarity === 'A'">
+                    <div class="background-darkening"></div>
+                    <h5 (click)="showHero(card)">{{ card.name }}</h5>
+                </div>
+
+                <div class="card-amount-bar">
+                    <div class="faction-progress-bar" [class.prometheus-background]="card.faction === 'prometheus'"
+                        [class.ouroboros-background]="card.faction === 'ouroboros'"
+                        [class.thots-background]="card.faction === 'thots'"
+                        [class.aegis-background]="card.faction === 'aegis'"
+                        [style.width.%]="getHeroBarWidth(card.id - 1)">
+                    </div>
+                    <div class="faction-emblem-container">
+                        <img src="assets/images/{{card.faction}}.png" alt="{{card.faction}} emblem">
+                    </div>
+                    <span class="non-mobile">{{ getHeroBarWidth(card.id - 1) }}% minted</span>
+                    <span style="margin-right: 1rem;">NFTs left: {{ card.amount }}</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="rarity-info-content" *ngIf="selectedView === 'rarity'">
+        <div class="rarity-info" *ngFor="let rarity of rarityInfos">
+            <div class="rarity-container" [class.SSS-border]="rarity.name === 'SSS'" [class.SS-border]="rarity.name === 'SS'"
+                [class.S-border]="rarity.name === 'S'" [class.A-border]="rarity.name === 'A'"
+                [style.background-image]="'url(assets/images/empty-card.png)'">
+                <img src="assets/images/{{rarity.name}}.png" alt="rarity">
+            </div>
+
+            <div class="card-amount-bar">
+                <div class="faction-progress-bar" [class.SSS-background]="rarity.name === 'SSS'"
+                    [class.SS-background]="rarity.name === 'SS'" [class.S-background]="rarity.name === 'S'"
+                    [class.A-background]="rarity.name === 'A'" [style.width.%]="getRarityBarWidth(rarity.index)">
+                </div>
+                <span class="empty-span"></span>
+                <span class="non-mobile">{{ getRarityBarWidth(rarity.index) }}% minted</span>
+                <span style="margin-right: 1rem;">NFTs left: {{ rarity.amount }}</span>
+            </div>
+        </div>
+
+        <div class="total-info">
+            <div class="total-container" [style.background-image]="'url(assets/images/empty-card.png)'">
+                <h3>TOTAL</h3>
+            </div>
+
+            <div class="card-amount-bar">
+                <div class="faction-progress-bar total-progress-bar" [style.width.%]="getTotalBarWidth()"></div>
+                <span class="empty-span"></span>
+                <span class="non-mobile">{{ getTotalBarWidth() }}% minted</span>
+                <span style="margin-right: 1rem;">NFTs left: {{ getCurrentTotal() }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-modal" [class.show-content]="showModal === true">
+        <div class="hero-modal-content" [isVisible]="showModal" (clickOutside)="close()">
+            <div class="image-wrapper">
+                <img *ngIf="currentHero !== undefined" src="assets/images/{{currentHero.image}}.png"
+                    alt="{{currentHero.image}}">
+            </div>
+        </div>
+    </div>
+</div>

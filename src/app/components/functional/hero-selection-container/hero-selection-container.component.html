@@ -1,0 +1,153 @@
+<div class="hero-selection-wrapper glow-transition d-flex flex-row" [ngClass]="{'aegis-border': currentHero.faction === 'Athena\'s Aegis',
+    'ouroboros-border': currentHero.faction === 'Ouroboros',
+    'thots-border': currentHero.faction === 'Thoth\'s Book',
+    'prometheus-border': currentHero.faction === 'Prometheus Fire'}">
+    
+    <div class="headline-container">
+        <h5>Hero {{ heroNumber + 1 }}</h5>
+    </div>
+    <div class="hero-selection-container d-flex">
+
+        <div class="hero-level-container-mobile border-b">
+            <div class="level-input">
+                <label class="me-2" for="level">Level: </label>
+                <input type="number" min="1" max="{{MAX_LEVEL}}" [formControl]="level" (blur)="changeLevel()">
+            </div>
+            <div class="hero-selection-mobile" (click)="toggleVisibility()">
+                {{ currentHero.name }}
+            </div>
+            <div class="hero-selection-list" [class.show-content]="showToggle === true" 
+                [isVisible]="showToggle" (clickOutside)="close()">
+                <ul>
+                    <li *ngFor="let hero of heroList" (click)="selectHero(hero)">{{ hero.name }}</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="hero-level-container">
+            <div class="level-input">
+                <label class="me-2" for="level">Level: </label>
+                <input type="number" min="1" max="{{MAX_LEVEL}}" [formControl]="level" (blur)="changeLevel()">
+            </div>
+    
+            <div class="hero-pic-selection flex-column">
+                <img class="hero-image" src="assets/images/{{currentHero.image}}.png" alt="{{currentHero.name}}" (click)="toggleVisibility()">
+            </div>
+    
+            <div id="hero-list" class="hero-selection-list" [class.show-content]="showToggle === true" 
+                [isVisible]="showToggle" (clickOutside)="close()">
+                <ul>
+                    <li *ngFor="let hero of heroList" (click)="selectHero(hero)">{{ hero.name }}</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="skills-main-container d-flex flex-column text-center">
+            <div class="stats-element stats-container d-flex flex-column flex-wrap justify-content-start">
+                <div>
+                    <h5>Stats </h5>
+                    <app-tooltip [tooltipText]="tooltips.stats"></app-tooltip>
+                    <span> (Remaining Stats: {{remainingStatPool}}) </span>
+                    <app-tooltip [tooltipText]="tooltips.statPool"></app-tooltip>
+                </div>
+                <div class="stats-identifier d-flex flex-row">
+                    <div class="w-100">
+                        <div class="stats-name-container">
+                            <p>ATK</p>
+                        </div>
+                        <div class="stats-input-container">
+                            <input type="number" min="{{minLimitAtk}}" max="9999" step="{{stepAtk}}" [formControl]="attack" 
+                                (blur)="changeStats(attack.value, 'attack')" (change)="changeStatPool()">
+                        </div>
+                    </div>
+                    <div class="w-100">
+                        <div class="stats-name-container">
+                            <p>HP</p>
+                        </div>
+                        <div class="stats-input-container">
+                            <input type="number" min="{{minLimitHp}}" max="99999" step="{{stepHp}}" [formControl]="health" 
+                                (blur)="changeStats(health.value, 'health')" (change)="changeStatPool()">
+                        </div>
+                    </div>
+                    <div class="w-100">
+                        <div class="stats-name-container">
+                            <p>Speed</p>
+                        </div>
+                        <div class="stats-input-container">
+                            <input type="number" min="{{minLimitSC}}" max="9999" step="{{stepSpeed}}" [formControl]="speed" 
+                                (blur)="changeStats(speed.value, 'speed')" (change)="changeStatPool()">
+                        </div>
+                    </div>
+                    <div class="w-100">
+                        <div class="stats-name-container">
+                            <p>Crit.</p>
+                        </div>
+                        <div class="stats-input-container">
+                            <input type="number" min="{{minLimitSC}}" max="9999" step="{{stepCrit}}" [formControl]="crit" 
+                                (blur)="changeStats(crit.value, 'crit')" (change)="changeStatPool()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-element main-element-container">
+                <h5 style="margin-bottom: 5px;">Main Element</h5>
+                <app-main-element-selector [heroNumber]="heroNumber" (mainElementUpdate)="updateRequirement()"></app-main-element-selector>
+            </div>
+            <div class="stats-element skills-container d-flex flex-column flex-wrap">
+                <h5>Skills</h5>
+                <div class="skill-main-wrapper d-flex flex-row">
+                    <div class="skill-wrapper">
+                        <div class="skill-identifier">
+                            <p>BA</p>
+                        </div>
+                        <div class="skill-damage-input">
+                            <app-skill-dropdown [heroNumber]="heroNumber" [skillType]="'basicAtk'"
+                                [skillValues]="currentHero.basicAtk"></app-skill-dropdown>
+                        </div>
+                        <div class="skill-element-selector">
+                            <app-skill-element-selector [heroNumber]="heroNumber" [skillType]="'basic'"></app-skill-element-selector>
+                        </div>
+                    </div>
+                    <div class="skill-wrapper">
+                        <div class="skill-identifier">
+                            <p>SA</p>
+                        </div>
+                        <div class="skill-damage-input">
+                            <app-skill-dropdown [heroNumber]="heroNumber" [skillType]="'skillAtk'"
+                                [skillValues]="currentHero.skillAtk"></app-skill-dropdown>
+                        </div>
+                        <div class="skill-element-selector">
+                            <app-skill-element-selector [heroNumber]="heroNumber" [skillType]="'skill'"></app-skill-element-selector>
+                        </div>
+                    </div>
+                    <div class="skill-wrapper">
+                        <div class="skill-identifier">
+                            <p>HA</p>
+                        </div>
+                        <div class="skill-damage-input">
+                            <app-skill-dropdown [heroNumber]="heroNumber" [skillType]="'hyperAtk'"
+                                [skillValues]="currentHero.hyperAtk"></app-skill-dropdown>
+                        </div>
+                        <div class="skill-element-selector">
+                            <app-skill-element-selector [heroNumber]="heroNumber" [skillType]="'hyper'"></app-skill-element-selector>
+                        </div>
+                    </div>
+                    <div class="skill-wrapper">
+                        <div class="skill-identifier">
+                            <p>Passive</p>
+                        </div>
+                        <div class="skill-damage-input hero-passive">
+                            <app-passive-dropdown [passiveValues]="currentPassiveValues" [selectedPassive]="currentPassiveValues[0]"
+                            [heroNumber]="heroNumber" [selectedLevel]="currentPassiveLevel" (passiveUpdate)="recalculateStats()">
+                            </app-passive-dropdown>
+                        </div>
+                        <div class="skill-element-selector">
+                            <app-skill-element-selector [heroNumber]="heroNumber" [skillType]="'passive'">
+                            </app-skill-element-selector>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

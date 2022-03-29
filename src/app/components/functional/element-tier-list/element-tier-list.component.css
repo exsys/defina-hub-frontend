@@ -1,0 +1,160 @@
+table, th, td {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    padding-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+th:first-child, .attack-elements-table th:nth-child(2) {
+    border-right: 1px solid grey;
+}
+
+.attack-elements-table th:nth-child(2), td:nth-child(2) {
+    width: 45%;
+}
+
+.attack-elements-table th:last-child, td:last-child {
+    width: 45%;
+}
+
+tr {
+    border-bottom: 1px solid grey;
+}
+
+tr:first-child {
+    border-bottom: 2px solid grey;
+}
+
+.passive-elements-table td:first-child {
+    width: 15%;
+}
+
+td:first-child {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 0.8em 0.4em;
+    text-align: center;
+}
+
+td:first-child, .attack-elements-table td:nth-child(2) {
+    border-right: 1px solid grey;
+}
+
+img {
+    width: 55px;
+    height: 55px;
+    margin: 0.25em 0.25em;
+    cursor: pointer;
+}
+
+h6 {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0;
+}
+
+span {
+    margin-bottom: 10px;
+}
+
+span:last-child {
+    margin-bottom: 0px;
+}
+
+.image-container {
+    margin: 0 0.5em;
+}
+
+.attack-elements-table {
+    width: 100%;
+}
+
+.passive-elements-table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.table-container {
+    padding: 2em 0;
+}
+
+.element-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    overflow: auto;
+    background-color: rgb(87, 87, 87); /* Fallback color if below opacity doesn't work */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.element-modal-header {
+    border-bottom: 1px solid gray;
+}
+
+.element-modal-header h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.element-modal-content {
+    background-color: rgb(63, 63, 63);
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #e6d29d;
+    width: 95%;
+    border-radius: 0.5em;
+}
+
+.element-modal-information {
+    padding: 15px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.show-content {
+    display: block;
+}
+
+@media (min-width: 576px) {
+    .table-container {
+        padding: 1.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    .element-modal-content {
+        width: 55%;
+    }
+}
+
+@media (min-width: 992px) {
+    .passive-elements-table {
+        width: 70%;
+    }
+    .table-container {
+        padding: 3.5em;
+    }
+    .element-modal-content {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .element-modal-content {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .element-modal-content {
+        width: 25%;
+    }
+}

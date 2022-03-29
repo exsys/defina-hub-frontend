@@ -1,0 +1,676 @@
+{
+    "heroes": [
+        {
+            "name": "Akechi Mitsuhide",
+            "image": "akechi",
+            "faction": "Thoth's Book",
+            "rarity": "A",
+            "basicAtk": {
+                "damage": [100, 100, 125, 125, 150, 150],
+                "skillText": ["to closest enemy", "to furthest enemy", "to closest enemy", "to furthest enemy", "to closest enemy", "to furthest enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 200, 250, 250, 300, 300],
+                "skillText": ["to closest enemy", "to furthest enemy", "to closest enemy", "to furthest enemy", "to closest enemy", "to furthest enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 400, 500, 500, 600, 600],
+                "skillText": ["to closest enemy", "to furthest enemy", "to closest enemy", "to furthest enemy", "to closest enemy", "to furthest enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Alexander the Great",
+            "image": "alexander",
+            "faction": "Athena's Aegis",
+            "rarity": "SS",
+            "basicAtk": {
+                "damage": [100, 100, 125, 125, 150, 150],
+                "skillText": ["to closest enemy", "to furthest enemy", "to closest enemy", "to furthest enemy", "to closest enemy", "to furthest enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [140, 140, 175, 175, 210, 210],
+                "skillText": ["to front row", " to back row", "to front row", "to back row", "to front row", "to back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [223.4, 245.7, 268, 290.3, 312.6, 334.9],
+                "skillText": ["to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Alfred Nobel",
+            "image": "alfred",
+            "faction": "Ouroboros",
+            "rarity": "SS",
+            "basicAtk": {
+                "damage": [100, 100, 125, 125, 150, 150],
+                "skillText": ["to random in front row", "to random in back row", "to random in front row", "to random in back row", "to random in front row", "to random in back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 200, 250, 250, 300, 300],
+                "skillText": ["to random in front row", "to random in back row", "to random in front row", "to random in back row", "to random in front row", "to random in back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [280, 280, 350, 350, 420, 420],
+                "skillText": ["to front row", "to back row", "to front row", "to back row", "to front row", "to back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Beowulf",
+            "image": "beowulf",
+            "faction": "Prometheus Fire",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [100, 100, 100, 150, 150, 150],
+                "skillText": ["to lowest HP enemy", "to highest ATK enemy", "to highest crit enemy", "to lowest HP enemy", "to highest ATK enemy", "to highest crit enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 220, 240, 260, 280, 300],
+                "skillText": ["health recovery", "health recovery", "health recovery", "health recovery", "health recovery", "health recovery"],
+                "type": "heal",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 400, 400, 600, 600, 600],
+                "skillText": ["to lowest HP enemy", "to highest ATK enemy", "to highest crit enemy", "to lowest HP enemy", "to highest ATK enemy", "to highest crit enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Cervantes",
+            "image": "cervantes",
+            "faction": "Prometheus Fire",
+            "rarity": "SS",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 220, 240, 260, 280, 300],
+                "skillText": ["to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 440, 480, 520, 560, 600],
+                "skillText": ["to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Cleopatra",
+            "image": "cleopatra",
+            "faction": "Athena's Aegis",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [160, 176, 192, 208, 224, 240],
+                "skillText": ["to closest enemy column", "to closest enemy column", "to closest enemy column", "to closest enemy column", "to closest enemy column", "to closest enemy column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [320, 352, 384, 416, 448, 480],
+                "skillText": ["to closest enemy column", "to closest enemy column", "to closest enemy column", "to closest enemy column", "to closest enemy column", "to closest enemy column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Dante Alighieri",
+            "image": "dante",
+            "faction": "Prometheus Fire",
+            "rarity": "SSS",
+            "basicAtk": {
+                "damage": [80, 88, 96, 104, 112, 120],
+                "skillText": ["to most populated column", "to most populated column", "to most populated column", "to most populated column", "to most populated column", "to most populated column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [160, 176, 192, 208, 224, 240],
+                "skillText": ["to most populated column", "to most populated column", "to most populated column", "to most populated column", "to most populated column", "to most populated column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [320, 352, 384, 416, 448, 480],
+                "skillText": ["to most populated column", "to most populated column", "to most populated column", "to most populated column", "to most populated column", "to most populated column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Elizabeth Báthory",
+            "image": "elizabeth",
+            "faction": "Thoth's Book",
+            "rarity": "SS",
+            "basicAtk": {
+                "damage": [100, 100, 125, 125, 150, 150],
+                "skillText": ["to highest HP enemy", "to lowest HP enemy", "to highest HP enemy", "to lowest HP enemy", "to highest HP enemy", "to lowest HP enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 200, 250, 250, 300, 300],
+                "skillText": ["to highest HP percentage", "to lowest HP percentage", "to highest HP percentage", "to lowest HP percentage", "to highest HP percentage", "to lowest HP percentage"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 400, 500, 500, 600, 600],
+                "skillText": ["to highest HP percentage", "to lowest HP percentage", "to highest HP percentage", "to lowest HP percentage", "to highest HP percentage", "to lowest HP percentage"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Erwin Schrödinger",
+            "image": "erwin",
+            "faction": "Ouroboros",
+            "rarity": "A",
+            "basicAtk": {
+                "damage": [100, 100, 125, 125, 150, 150],
+                "skillText": ["to random in back row", "to lowest HP enemy", "to random in back row", "to lowest HP enemy", "to random in back row", "to lowest HP enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 200, 250, 250, 300, 300],
+                "skillText": ["to random in back row", "to lowest HP enemy", "to random in back row", "to lowest HP enemy", "to random in back row", "to lowest HP enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 400, 500, 500, 600, 600],
+                "skillText": ["to random in back row", "to lowest HP enemy", "to random in back row", "to lowest HP enemy", "to random in back row", "to lowest HP enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Florence Nightingale",
+            "image": "nightingale",
+            "faction": "Thoth's Book",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally"],
+                "type": "heal",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 220, 240, 260, 280, 300],
+                "skillText": ["heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally"],
+                "type": "heal",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 440, 480, 520, 560, 600],
+                "skillText": ["heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally", "heal to lowest HP percentage ally"],
+                "type": "heal",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Frédéric Chopin",
+            "image": "chopin",
+            "faction": "Athena's Aegis",
+            "rarity": "SS",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to lowest HP percentage", "to lowest HP percentage", "to lowest HP percentage", "to lowest HP percentage", "to lowest HP percentage", "to lowest HP percentage"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [132, 145.2, 158.4, 171.6, 184.8, 198],
+                "skillText": ["to 3 random enemies", "to 3 random enemies", "to 3 random enemies", "to 3 random enemies", "to 3 random enemies", "to 3 random enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [223.4, 245.7, 268, 290.3, 312.6, 334.9],
+                "skillText": ["to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "George Patton",
+            "image": "george",
+            "faction": "Prometheus Fire",
+            "rarity": "A",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [132, 145.2, 158.4, 171.6, 184.8, 198],
+                "skillText": ["to 3 random enemies", "to 3 random enemies", "to 3 random enemies", "to 3 random enemies", "to 3 random enemies", "to 3 random enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 440, 480, 520, 560, 600],
+                "skillText": ["to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Guanyu",
+            "image": "guanyu",
+            "faction": "Thoth's Book",
+            "rarity": "SSS",
+            "basicAtk": {
+                "damage": [80, 88, 96, 104, 112, 120],
+                "skillText": ["to most populated row", "to most populated row", "to most populated row", "to most populated row", "to most populated row", "to most populated row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [150, 165, 180, 195, 210, 225],
+                "skillText": ["to most populated row", "to most populated row", "to most populated row", "to most populated row", "to most populated row", "to most populated row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [300, 330, 360, 390, 420, 450],
+                "skillText": ["to most populated row", "to most populated row", "to most populated row", "to most populated row", "to most populated row", "to most populated row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Hasan",
+            "image": "hasan",
+            "faction": "Ouroboros",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 220, 240, 260, 280, 300],
+                "skillText": ["to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 440, 480, 520, 560, 600],
+                "skillText": ["to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy", "to lowest HP enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Hattori Hanzo",
+            "image": "hanzo",
+            "faction": "Athena's Aegis",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to lowest HP enemy", "to highest ATK enemy", "to lowest HP enemy", "to highest ATK enemy", "to lowest HP enemy", "to highest ATK enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 220, 240, 260, 280, 300],
+                "skillText": ["buff on next attack", "buff on next attack", "buff on next attack", "buff on next attack", "buff on next attack", "buff on next attack"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 440, 480, 520, 560, 600],
+                "skillText": ["buff on next attack", "buff on next attack", "buff on next attack", "buff on next attack", "buff on next attack", "buff on next attack"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Hugo",
+            "image": "hugo",
+            "faction": "Ouroboros",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy", "to random enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [111.7, 122.8, 133.9, 145, 156.1, 167.2],
+                "skillText": ["to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [223.4, 245.7, 268, 290.3, 312.6, 334.9],
+                "skillText": ["to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Helen of Troy",
+            "image": "helen",
+            "faction": "Thoth's Book",
+            "rarity": "SS",
+            "basicAtk": {
+                "damage": [100, 100, 125, 125, 150, 150],
+                "skillText": ["to highest ATK enemy", "to highest crit enemy", "to highest ATK enemy", "to highest crit enemy", "to highest ATK enemy", "to highest crit enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [160, 160, 200, 200, 240, 240],
+                "skillText": ["to highest ATK and same column", "to highest Crit and same column", "to highest ATK and same column", "to highest Crit and same column", "to highest ATK and same column", "to highest Crit and same column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [280, 280, 350, 350, 420, 420],
+                "skillText": ["to highest ATK and same column and row", "to highest Crit and same column", "to highest ATK and same column and row", "to highest Crit and same column", "to highest ATK and same column and row", "to highest Crit and same column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Hercules",
+            "image": "hercules",
+            "faction": "Prometheus Fire",
+            "rarity": "SS",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 220, 240, 260, 280, 300],
+                "skillText": ["to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 440, 480, 520, 560, 600],
+                "skillText": ["to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy", "to highest ATK enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Homer",
+            "image": "homer",
+            "faction": "Thoth's Book",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [70, 70, 88, 88, 105, 105],
+                "skillText": ["to front row", " to back row", "to front row", "to back row", "to front row", "to back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [140, 140, 175, 175, 210, 210],
+                "skillText": ["to front row", " to back row", "to front row", "to back row", "to front row", "to back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [228, 251, 274, 297, 320, 340],
+                "skillText": ["shield to all allies", "shield to all allies", "shield to all allies", "shield to all allies", "shield to all allies", "shield to all allies"],
+                "type": "shield",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Jeanne d'Arc",
+            "image": "jeanne",
+            "faction": "Athena's Aegis",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [100, 100, 125, 125, 150, 150],
+                "skillText": ["to random in front row", "to random in back row", "to random in front row", "to random in back row", "to random in front row", "to random in back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [140, 140, 175, 175, 210, 210],
+                "skillText": ["to front row", " to back row", "to front row", "to back row", "to front row", "to back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [280, 280, 350, 350, 420, 420],
+                "skillText": ["to front row", " to back row", "to front row", "to back row", "to front row", "to back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Morgan le Fay",
+            "image": "morgan",
+            "faction": "Athena's Aegis",
+            "rarity": "SSS",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to highest energy enemy", "to highest energy enemy", "to highest energy enemy", "to highest energy enemy", "to highest energy enemy", "to highest energy enemy"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [111.7, 122.8, 133.9, 145, 156.1, 167.2],
+                "skillText": ["to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [223.4, 245.7, 268, 290.3, 312.6, 334.9],
+                "skillText": ["to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Nicolaus Copernicus",
+            "image": "nicolaus",
+            "faction": "Ouroboros",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [70, 77, 84, 91, 98, 105],
+                "skillText": ["to front row", "to front row", "to front row", "to front row", "to front row", "to front row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [140, 154, 168, 182, 196, 210],
+                "skillText": ["to front row", "to front row", "to front row", "to front row", "to front row", "to front row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [280, 308, 336, 364, 392, 420],
+                "skillText": ["to random and same row and column", "to random and same row and column", "to random and same row and column", "to random and same row and column", "to random and same row and column", "to random and same row and column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Oda Nobunaga",
+            "image": "nobunaga",
+            "faction": "Ouroboros",
+            "rarity": "SS",
+            "basicAtk": {
+                "damage": [100, 100, 125, 125, 150, 150],
+                "skillText": ["to closest enemy", "to closest in most populated column", "to closest enemy", "to closest in most populated column", "to closest enemy", "to closest in most populated column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [150, 150, 188, 188, 225, 225],
+                "skillText": ["to closest enemy", "to most populated column", "to closest enemy", "to most populated column", "to closest enemy", "to most populated column"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [223.4, 245.7, 268, 290.3, 312.6, 334.9],
+                "skillText": ["to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Paris",
+            "image": "paris",
+            "faction": "Thoth's Book",
+            "rarity": "SS",
+            "basicAtk": {
+                "damage": [100, 100, 100, 150, 150, 150],
+                "skillText": ["to random in front row", "to random in back row", "to random in most populated row", "to random in front row", "to random in back row", "to random in most populated row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [140, 140, 140, 210, 210, 210],
+                "skillText": ["to front row", " to back row", "to most populated row", "to front row", "to back row", "to most populated row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [280, 280, 280, 420, 420, 420],
+                "skillText": ["to front row", " to back row", "to most populated row", "to front row", "to back row", "to most populated row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Solomon",
+            "image": "solomon",
+            "faction": "Ouroboros",
+            "rarity": "SSS",
+            "basicAtk": {
+                "damage": [100, 110, 120, 130, 140, 150],
+                "skillText": ["to lowest HP percentage", "to lowest HP percentage", "to lowest HP percentage", "to lowest HP percentage", "to lowest HP percentage", "to lowest HP percentage"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [111.7, 122.8, 133.9, 145, 156.1, 167.2],
+                "skillText": ["to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [223.4, 245.7, 268, 290.3, 312.6, 334.9],
+                "skillText": ["to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies", "to all enemies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Wolfgang Amadeus Mozart",
+            "image": "mozart",
+            "faction": "Prometheus Fire",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [70, 77, 84, 91, 98, 105],
+                "skillText": ["heal to allies in same row", "heal to allies in same row", "heal to allies in same row", "heal to allies in same row", "heal to allies in same row", "heal to allies in same row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [114, 125.4, 136.8, 148.2, 159.6, 171],
+                "skillText": ["heal to all allies", "heal to all allies", "heal to all allies", "heal to all allies", "heal to all allies", "heal to all allies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [228, 250.8, 273.6, 296.4, 319.2, 342],
+                "skillText": ["heal to all allies", "heal to all allies", "heal to all allies", "heal to all allies", "heal to all allies", "heal to all allies"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Yi Sun-sin",
+            "image": "yi-sun",
+            "faction": "Prometheus Fire",
+            "rarity": "S",
+            "basicAtk": {
+                "damage": [70, 70, 88, 88, 105, 105],
+                "skillText": ["to front row", " to back row", "to front row", "to back row", "to front row", "to back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [140, 140, 175, 175, 210, 210],
+                "skillText": ["to front row", " to back row", "to front row", "to back row", "to front row", "to back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [280, 280, 350, 350, 420, 420],
+                "skillText": ["to front row", " to back row", "to front row", "to back row", "to front row", "to back row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        },
+        {
+            "name": "Zorro",
+            "image": "zorro",
+            "faction": "Athena's Aegis",
+            "rarity": "A",
+            "basicAtk": {
+                "damage": [100, 100, 125, 125, 150, 150],
+                "skillText": ["to random in back row", "to random in front row", "to random in back row", "to random in front row", "to random in back row", "to random in front row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "skillAtk": {
+                "damage": [200, 200, 250, 250, 300, 300],
+                "skillText": ["to random in back row", "to random in front row", "to random in back row", "to random in front row", "to random in back row", "to random in front row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            },
+            "hyperAtk": {
+                "damage": [400, 400, 500, 500, 600, 600],
+                "skillText": ["to random in back row", "to random in front row", "to random in back row", "to random in front row", "to random in back row", "to random in front row"],
+                "type": "damage",
+                "scalingSource": "ATK"
+            }
+        }
+    ]
+}

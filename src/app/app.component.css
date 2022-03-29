@@ -1,0 +1,8 @@
+.defina-hub-container {
+    background-image: url("/assets/images/background-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+    min-height: calc(100% - 71px - 42px);
+}

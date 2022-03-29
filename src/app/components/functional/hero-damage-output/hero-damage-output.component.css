@@ -1,0 +1,46 @@
+h5 {
+    display: inline;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e6d29d;
+    border-radius: 0.25em;
+}
+
+li {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 25%;
+    border-right: 1px solid #e6d29d;
+    font-weight: bold;
+    padding: 0.2em;
+}
+
+li:hover {
+    color: #e6d29d;
+}
+
+li:first-child {
+    border-top-left-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+}
+
+li:last-child {
+    border: none;
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+}
+
+.hero-selection-navbar {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.selected-number {
+    background-color: #555;
+}

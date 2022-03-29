@@ -1,0 +1,89 @@
+span {
+    margin: 0;
+    position: absolute;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 350px;
+}
+
+li {
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
+
+li:hover {
+    background-color: rgb(97, 97, 97);
+}
+
+.skill-dropdown-container {
+    position: relative;
+}
+
+.skill-select-btn {
+    background-color: #333;
+    border: 1px solid rgba(211, 211, 211, 0.6);
+    border-radius: 0.15em;
+    margin: 0 auto;
+    height: 30px;
+    width: 85%;
+    cursor: pointer;
+    position: relative; /* brauche ich später für den dropdown arrow icon. falls überhaupt einer kommt lol */
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.skill-dropdown-list {
+    border: 1px solid grey;
+    border-radius: 0.25em;
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    transform: translate(0px, 1px);
+    left: -22%;
+    background-color: rgb(87, 87, 87);
+    z-index: 1;
+}
+
+.skill-tooltip {
+    background-color: rgb(63, 63, 63);
+    border: 1px solid gray;
+    border-radius: 0.25em;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    min-width: 210px;
+}
+
+li .skill-tooltip {
+    visibility: hidden;
+}
+
+li:hover .skill-tooltip {
+    visibility: visible;
+}
+
+.tooltip-mobile {
+    right: 85px;
+}
+
+.show-content {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .tooltip-mobile {
+        right: inherit;
+    }
+}

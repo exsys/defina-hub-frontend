@@ -1,0 +1,23 @@
+<h6>{{storage.team[heroNumber]?.name}}</h6>
+<div class="skill-damage-container">
+    <span>Basic Attack:</span>
+    <span>
+        {{ storage.teamDamage[heroNumber].basicAtkDmg.min }} - {{ storage.teamDamage[heroNumber].basicAtkDmg.max }} {{ storage.teamDamage[heroNumber].basicAtkDmg.extra }}
+    </span>
+</div>
+<div class="skill-damage-container">
+    <span>Skill Attack:</span>
+    <span>
+        {{ storage.teamDamage[heroNumber].skillAtkDmg.min }} - {{ storage.teamDamage[heroNumber].skillAtkDmg.max }} {{ storage.teamDamage[heroNumber].skillAtkDmg.extra }}
+    </span>
+</div>
+<div class="skill-damage-container">
+    <span>Hyper Attack:</span>
+    <span>
+        {{ storage.teamDamage[heroNumber].hyperAtkDmg.min }} - {{ storage.teamDamage[heroNumber].hyperAtkDmg.max }} {{ storage.teamDamage[heroNumber].hyperAtkDmg.extra }}
+    </span>
+</div>
+<div class="passive-extra-container" *ngIf="storage.teamDamage[heroNumber].passive">
+    <span>Passive:</span>
+    <span>{{ storage.teamDamage[heroNumber].passive }}</span>
+</div>

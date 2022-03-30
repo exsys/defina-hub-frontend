@@ -1,33 +1,20 @@
-h1, h5 {
+h1, h5, span {
     display: inline-block;
 }
 
 h5 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     cursor: pointer;
-    margin: 0;
     z-index: 1;
     color: rgb(245, 245, 245);
 }
 
 h5:hover {
-    color: #e6d29d;
-}
-
-h3 {
-    margin: 0;
-}
-
-h1 {
-    font-size: 2.5rem;
+    color: var(--main-color-1);
 }
 
 h1 span {
-    font-size: 0.6em;
-}
-
-span {
-    display: inline-block;
+    font-size: 1.4rem;
 }
 
 img {
@@ -37,26 +24,23 @@ img {
 }
 
 ul {
-    list-style: none;
-    margin: 0;
     margin-left: 0.5em;
-    padding: 0;
 }
 
 li {
     display: inline-block;
-    padding: 0.5em 0.5em;
-    margin-bottom: 0.5em;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0.5rem;
     width: 49%;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     cursor: pointer;
     vertical-align: middle;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
 }
 
 li:hover {
-    color: #e6d29d;
+    color: var(--main-color-1);
 }
 
 .card-amount-bar img {
@@ -170,17 +154,17 @@ li:hover {
     height: 100%;
     padding-top: 180px;
     overflow: auto;
-    background-color: rgb(87, 87, 87); /* Fallback color if below opacity doesn't work */
+    background-color: var(--bg-color-2); /* Fallback color if below opacity doesn't work */
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero-modal-content {
-    background-color: rgb(63, 63, 63);
+    background-color: var(--bg-color-1);
     margin: 0 auto;
     padding: 20px;
     border: 2px solid #e6d29d;
     width: 80%;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 }
 
 .show-content {
@@ -192,11 +176,6 @@ li:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.text-center {
-    margin: 0 0.5rem 1rem 0.5rem;
-    border-bottom: 1px solid gray;
 }
 
 .margin-bottom-big {
@@ -256,7 +235,7 @@ li:hover {
 }
 
 .selected  {
-    color: #e6d29d;
+    color: var(--main-color-1);
     box-shadow: 0 0 13px 2px #7a7a7a96;
 }
 
@@ -267,13 +246,13 @@ li:hover {
    
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(95, 95, 95);
+    background: var(--bg-color-2);
     border-radius: 15px;
 }
   
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(112, 112, 112);
+    background: var(--bg-color-4);
 }
 
 @media (min-width: 576px) {

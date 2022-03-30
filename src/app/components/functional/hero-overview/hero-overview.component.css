@@ -1,10 +1,5 @@
-
-p {
-    margin: 0;
-}
-
 .hero-overview {
-    padding-left: 10px;
+    padding-left: 8px;
     display: grid;
     grid-template-columns: 32% 28% 40%;
 }
@@ -17,8 +12,8 @@ p {
 .allocation-container {
     width: 100%;
     border: 1px solid rgb(211, 211, 211);;
-    border-radius: 1em;
-    margin-bottom: 0.25em;
+    border-radius: 1rem;
+    margin-bottom: 0.25rem;
     overflow: hidden;
     position: relative;
 }
@@ -36,5 +31,5 @@ p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.85em;
+    font-size: 0.85rem;
 }

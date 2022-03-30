@@ -4,7 +4,6 @@ h5 {
 
 h6 {
     font-weight: bold;
-    margin-bottom: 0;
     margin-top: 0.5rem;
 }
 
@@ -17,7 +16,7 @@ span {
 }
 
 .description {
-    margin-top: 0.25em;
+    margin-top: 0.25rem;
     white-space: pre-line;
     /* ... after 13 lines */
     display: -webkit-box;

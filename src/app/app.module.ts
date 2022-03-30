@@ -17,7 +17,6 @@ import { HeroDamageOutputComponent } from './components/functional/hero-damage-o
 import { HeroOverviewComponent } from './components/functional/hero-overview/hero-overview.component';
 import { PassiveDropdownComponent } from './components/functional/passive-dropdown/passive-dropdown.component';
 import { ClickOutsideDirective } from './directives/click-outside.directive';
-import { HeroDropdownComponent } from './components/functional/hero-dropdown/hero-dropdown.component';
 import { TooltipComponent } from './components/functional/tooltip/tooltip.component';
 import { FooterComponent } from './components/functional/footer/footer.component';
 import { ContactFormComponent } from './components/functional/contact-form/contact-form.component';
@@ -49,7 +48,6 @@ import { NftTickerComponent } from './components/container/guides-page/nft-ticke
     HeroOverviewComponent,
     PassiveDropdownComponent,
     ClickOutsideDirective,
-    HeroDropdownComponent,
     TooltipComponent,
     FooterComponent,
     ContactFormComponent,

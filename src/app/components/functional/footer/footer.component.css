@@ -1,8 +1,7 @@
 .footer-container {
     background-color: black;
-    color: rgb(211, 211, 211);
     border-top: 2px solid;
     border-image: linear-gradient(90deg,#000 -10%,#e6d29d 50%,#000 110%) 1 stretch;
     text-align: center;
-    padding: 0.5em;
+    padding: 0.5rem;
 }

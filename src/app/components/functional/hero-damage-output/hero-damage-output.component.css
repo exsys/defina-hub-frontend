@@ -3,11 +3,8 @@ h5 {
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #e6d29d;
-    border-radius: 0.25em;
+    border: 1px solid var(--main-color-1);
+    border-radius: 0.25rem;
 }
 
 li {
@@ -15,24 +12,24 @@ li {
     cursor: pointer;
     text-align: center;
     width: 25%;
-    border-right: 1px solid #e6d29d;
+    border-right: 1px solid var(--main-color-1);
     font-weight: bold;
-    padding: 0.2em;
+    padding: 0.2rem;
 }
 
 li:hover {
-    color: #e6d29d;
+    color: var(--main-color-1);
 }
 
 li:first-child {
-    border-top-left-radius: 0.25em;
-    border-bottom-left-radius: 0.25em;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
 }
 
 li:last-child {
     border: none;
-    border-top-right-radius: 0.25em;
-    border-bottom-right-radius: 0.25em;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
 }
 
 .hero-selection-navbar {

@@ -41,13 +41,13 @@ td, th {
    
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(95, 95, 95);
+    background: var(--bg-color-3);
     border-radius: 15px;
 }
   
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(112, 112, 112);
+    background: var(--bg-color-4);
 }
 
 @media (min-width: 576px) {

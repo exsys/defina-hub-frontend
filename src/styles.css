@@ -1,8 +1,15 @@
+:root {
+    --font-color-main: rgb(211, 211, 211);
+    --main-color-1: #e6d29d;
+    --bg-color-1: rgb(63, 63, 63);
+    --bg-color-2: rgb(87, 87, 87);
+    --bg-color-3: rgb(97, 97, 97);
+    --bg-color-4: rgb(112, 112, 112);
+}
+
 * {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
-    color: rgb(211, 211, 211);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -14,6 +21,7 @@
 body {
     margin: 0;
     background-color: #222;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 body, html {
@@ -24,8 +32,22 @@ body, html {
     position: relative;
 }
 
+h1, h2, h3, h4, h5, h6, p, span, button, ul, a, table, input, label {
+    color: var(--font-color-main);
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 .border-b {
     border-bottom: 1px solid lightgray;
+}
+
+.border-b-2 {
+    border-bottom: 1px solid gray;
 }
 
 .aegis-border {

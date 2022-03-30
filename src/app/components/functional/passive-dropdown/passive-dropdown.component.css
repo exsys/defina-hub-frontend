@@ -1,18 +1,14 @@
 
 span {
-    margin: 0;
     position: absolute;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     max-height: 350px;
 }
 
 li {
-    padding: 0.25em 0.5em;
+    padding: 0.25rem 0.5rem;
     cursor: pointer;
 }
 
@@ -21,7 +17,7 @@ li:not(:last-child) {
 }
 
 li:hover {
-    background-color: rgb(97, 97, 97);
+    background-color: var(--bg-color-3);
 }
 
 .custom-dropdown-container {
@@ -31,13 +27,13 @@ li:hover {
 .passive-select-btn {
     background-color: #333;
     border: 1px solid rgba(211, 211, 211, 0.6);
-    border-radius: 0.15em;
+    border-radius: 0.15rem;
     margin: 0 auto;
     height: 30px;
     width: 85%;
     cursor: pointer;
     position: relative; /* brauche ich später für den dropdown arrow icon. falls überhaupt einer kommt lol */
-    font-size: 0.9em;
+    font-size: 0.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,20 +42,20 @@ li:hover {
 
 .passive-selection-list {
     border: 1px solid grey;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
     display: none;
     position: absolute;
     min-width: 120px;
     transform: translate(0px, 1px);
     left: -22%;
-    background-color: rgb(87, 87, 87);
+    background-color: var(--bg-color-2);
     z-index: 1;
 }
 
 .passive-tooltip {
-    background-color: rgb(63, 63, 63);
+    background-color: var(--bg-color-1);
     border: 1px solid gray;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
     padding: 10px;
     z-index: 1;
     position: absolute;

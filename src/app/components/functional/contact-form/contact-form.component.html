@@ -1,11 +1,6 @@
 <div class="border-wrapper">
     <div class="suggestion-form-container">
         <form [formGroup]="suggestionForm" (ngSubmit)="onSubmit()">
-            <!--<label for="discord-name">Discord name (optional) </label>
-            <app-tooltip [tooltipText]="'You don\'t need to enter your discord name. 
-                But it would be easier to get back to you if I\'ll have any questions about your suggestion.'"></app-tooltip>
-            <input type="text" placeholder="anon#0000" formControlName="discordName">-->
-            
             <label for="suggestion-text">Suggestion</label>
             <textarea placeholder="SSS wen? UwU" formControlName="suggestionText" rows="8"></textarea>
 

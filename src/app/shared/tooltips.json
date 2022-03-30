@@ -2,7 +2,7 @@
     "stats": "The values you enter here are the values you see ingame. For ATK and HP on the left side under \"Overview\" you'll see the values without the passive bonus.",
     "statPool": "All stats share the same stat pool. For every point you use in any stat you reduce your remaining stat pool by 1 (For HP it's 1 stat = 12 HP). NOTE: Sometimes remaining stats shows 1 - 3 stat points left after entering all stats and passive. Ignore that for now, values on left should still be correct.",
     "overview": "Here will be the overview for your team and heroes. Once you select a hero and enter the hero's stats/elements it will show here.",
-    "heroOverview": "The % tells you how much of the max amount that stat is. 0% = lowest value possible and 100% = highest value possible. It's only possible to have 2 stats maxed out at 100%.",
+    "heroOverview": "The values shown here are the values without the passive bonus. The percentage tells you the allocation of that stat. 0% = lowest value possible and 100% = highest value possible. It's only possible to have 2 stats maxed out at 100%, the other 2 stats would be 0% in that case.",
     "description": "Hover over a selected element to see it's description.",
     "damage": "Damage output of your heroes. The values shown here are not accurate calculations but rather estimations of possible damage dealt. These estimations don't take damage reduction into consideration so the actual values may differ from the values shown here.",
     "elementRanking": "S = best tier and F = worst. Note that good elements are only good if you give them to the right heroes and create good synergies with other elements and heroes. So even an S tier element can be F tier if placed wrong.",

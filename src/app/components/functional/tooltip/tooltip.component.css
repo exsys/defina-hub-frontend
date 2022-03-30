@@ -8,6 +8,7 @@
     z-index: 2;
     position: absolute;
     text-align: center;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .tooltip-wrapper .tooltip-text {

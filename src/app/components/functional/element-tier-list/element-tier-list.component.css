@@ -4,8 +4,8 @@ table, th, td {
 
 th {
     text-align: center;
-    padding-bottom: 0.5em;
-    font-size: 1.1em;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
 }
 
 th:first-child, .attack-elements-table th:nth-child(2) {
@@ -46,14 +46,13 @@ td:first-child, .attack-elements-table td:nth-child(2) {
 img {
     width: 55px;
     height: 55px;
-    margin: 0.25em 0.25em;
+    margin: 0.25rem 0.25rem;
     cursor: pointer;
 }
 
 h6 {
     display: inline-block;
     font-weight: bold;
-    margin: 0;
 }
 
 span {
@@ -65,7 +64,7 @@ span:last-child {
 }
 
 .image-container {
-    margin: 0 0.5em;
+    margin: 0 0.5rem;
 }
 
 .attack-elements-table {
@@ -78,7 +77,7 @@ span:last-child {
 }
 
 .table-container {
-    padding: 2em 0;
+    padding: 2rem 0;
 }
 
 .element-modal {
@@ -91,7 +90,7 @@ span:last-child {
     height: 100%;
     padding-top: 200px;
     overflow: auto;
-    background-color: rgb(87, 87, 87); /* Fallback color if below opacity doesn't work */
+    background-color: var(--bg-color-2); /* Fallback color if below opacity doesn't work */
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -100,17 +99,17 @@ span:last-child {
 }
 
 .element-modal-header h1 {
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
 }
 
 .element-modal-content {
-    background-color: rgb(63, 63, 63);
+    background-color: var(--bg-color-1);
     margin: auto;
     padding: 20px;
-    border: 2px solid #e6d29d;
+    border: 2px solid var(--main-color-1);
     width: 95%;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
 }
 
 .element-modal-information {
@@ -125,7 +124,7 @@ span:last-child {
 
 @media (min-width: 576px) {
     .table-container {
-        padding: 1.5em;
+        padding: 1.5rem;
     }
 }
 
@@ -140,7 +139,7 @@ span:last-child {
         width: 70%;
     }
     .table-container {
-        padding: 3.5em;
+        padding: 3.5rem;
     }
     .element-modal-content {
         width: 45%;

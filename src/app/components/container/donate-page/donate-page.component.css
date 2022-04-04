@@ -34,11 +34,15 @@ li:hover, input:hover, .coin-selection-container:hover {
     background: var(--bg-color-2);
 }
 
-input, .coin-selection-container, .coin-selection-list {
+input {
     background: var(--bg-color-1);
     padding: 0.35rem 0.5rem 0.35rem 0.75rem;
     width: 65%;
     outline: none;
+}
+
+input, .coin-selection-container, .coin-selection-list {
+    background: var(--bg-color-1);
 }
 
 input:hover, input:focus, .donate-form-container, .web3-modal-content {

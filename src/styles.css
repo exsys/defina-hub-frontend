@@ -43,7 +43,7 @@ ul {
 }
 
 .walletconnect-modal__mobile__toggle, .walletconnect-modal__footer {
-    color: #898d97;
+    color: #5d5f64;
 }
 .walletconnect-modal__mobile__toggle a {
     cursor: pointer;
@@ -54,6 +54,10 @@ ul {
 }
 .border-b-2 {
     border-bottom: 1px solid gray;
+}
+
+.border-main-color-1 {
+    border: 1px solid var(--main-color-1);
 }
 
 .aegis-border {

@@ -1,0 +1,16 @@
+button {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--main-color-1);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background: var(--bg-color-1);
+}
+
+button:hover {
+    background: var(--bg-color-2);
+}
+
+button:active {
+    transform: scale(0.99);
+}

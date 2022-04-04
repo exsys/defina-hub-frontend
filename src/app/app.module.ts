@@ -32,6 +32,8 @@ import { GuidesOverviewComponent } from './components/container/guides-page/guid
 import { TeamRecommendationComponent } from './components/functional/team-recommendation/team-recommendation.component';
 import { ExpTableComponent } from './components/container/guides-page/exp-table/exp-table.component';
 import { NftTickerComponent } from './components/container/guides-page/nft-ticker/nft-ticker.component';
+import { DonatePageComponent } from './components/container/donate-page/donate-page.component';
+import { FormButtonComponent } from './components/functional/form-button/form-button.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { NftTickerComponent } from './components/container/guides-page/nft-ticke
     GuidesOverviewComponent,
     TeamRecommendationComponent,
     ExpTableComponent,
-    NftTickerComponent
+    NftTickerComponent,
+    DonatePageComponent,
+    FormButtonComponent
   ],
   imports: [
     BrowserModule,

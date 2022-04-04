@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ContactPageComponent } from './components/container/contact-page/contact-page.component';
+import { DonatePageComponent } from './components/container/donate-page/donate-page.component';
 import { ElementsTierListComponent } from './components/container/guides-page/elements-tier-list/elements-tier-list.component';
 import { ExpTableComponent } from './components/container/guides-page/exp-table/exp-table.component';
 import { GuidesOverviewComponent } from './components/container/guides-page/guides-overview/guides-overview.component';
@@ -12,6 +13,7 @@ import { LandingPageComponent } from './components/container/landing-page/landin
 
 const routes: Routes = [
   { path: "", component: LandingPageComponent },
+  { path: "donate", component: DonatePageComponent },
   { path: "contact", component: ContactPageComponent },
   { path: "guides", redirectTo: "guides/overview" },
   {

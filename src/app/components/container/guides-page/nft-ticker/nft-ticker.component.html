@@ -78,7 +78,7 @@
         </div>
     </div>
 
-    <div class="hero-modal" [class.show-content]="showModal === true">
+    <div class="hero-modal" [class.show-content]="showModal">
         <div class="hero-modal-content" [isVisible]="showModal" (clickOutside)="close()">
             <div class="image-wrapper">
                 <img *ngIf="currentHero !== undefined" src="assets/images/{{currentHero.image}}.png"

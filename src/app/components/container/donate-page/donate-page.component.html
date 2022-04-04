@@ -1,0 +1,86 @@
+<div class="donate-page-container">
+    <div class="donate-page-content">
+        <div class="donate-page-text">
+            <p class="w-100 mb-3">If you enjoy this project I'd be happy about any donation!</p>
+            <div class="popup-container">
+                <p class="wallet-address" (click)="copyToClipboard()">0x2A619a181C0386ad26f997a45b2C9C14eB096fa5 <i
+                        class="fa-regular fa-copy"></i></p>
+                <span class="popup-text" [class.show]="togglePopup" #copiedPopup>Copied!</span>
+            </div>
+        </div>
+
+        <form>
+            <div class="donate-form-container">
+                <h2 class="text-center mb-4">Donate</h2>
+                <div class="form-element">
+                    <h3>Coin</h3>
+                    <div class="coin-selection-container" [class.open]="toggleCoinList" (click)="showCoinList()">
+                        <img src="assets/images/{{ selectedCoin.toLowerCase() }}.png" alt="{{ selectedCoin.toLowerCase() }}">
+                        <h4>{{ selectedCoin }}</h4>
+                        <div class="coin-selection-list" [class.show-content]="toggleCoinList" [isVisible]="toggleCoinList" 
+                            (clickOutside)="close()">
+                            <ul>
+                                <li *ngFor="let coin of coinSelection" (click)="selectCoin(coin)">
+                                    <div class="d-flex flex-row">
+                                        <img src="assets/images/{{ coin.toLowerCase() }}.png" alt="{{ coin }}">
+                                        <span class="justify-content-center w-100">{{ coin }}</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="balance-container d-flex justify-content-end">
+                    <span class="balance-content">balance: {{ currentBalance }}</span>
+                </div>
+
+                <div class="form-element">
+                    <label for="amount">Amount</label>
+                    <input type="text" placeholder="0.0" [formControl]="selectedAmount" required pattern="\d+\.?\d*">
+                    <div class="max-button-container">
+                        <span class="max-button" (click)="selectMaxBalance()">max</span>
+                    </div>
+                </div>
+
+                <div class="utility-stuff-container mb-2" *ngIf="walletConnected || errorMsg">
+                    <span class="disconnect-button" *ngIf="walletConnected" (click)="disconnectWallet()">disconnect</span>
+                    <span class="error-message" *ngIf="errorMsg" (click)="removeErrorMsg()">{{ errorMsg }}</span>
+                </div>
+
+                <app-form-button [buttonText]="'Connect Wallet'" (click)="toggleWeb3Modal(); $event.preventDefault()"
+                    *ngIf="!walletConnected"></app-form-button>
+                <app-form-button [buttonText]="'Send Donation'" (click)="sendDonation(); $event.preventDefault()"
+                    *ngIf="walletConnected && correctNetwork"></app-form-button>
+                <app-form-button [buttonText]="'Change Network'" (click)="changeChain(); $event.preventDefault()"
+                    *ngIf="walletConnected && !correctNetwork"></app-form-button>
+            </div>
+        </form>
+
+        <div id="clickTarget"></div> <!--Workaround so component recognizes the metamask connection cancel as click outside-->
+    </div>
+
+    <div class="web3-modal-container" [class.show-content]="web3ModalToggle">
+        <div class="web3-modal-wrapper">
+            <div class="web3-modal-content"  [isVisible]="web3ModalToggle" (clickOutside)="closeWeb3Modal()">
+                <div class="web3-selection-container metamask-selection-container" (click)="connectMetamask()">
+                    <div class="web3-icon-container">
+                        <img src="assets/images/metamask-icon.svg" alt="MetaMask">
+                    </div>
+                    <h2>MetaMask</h2>
+                    <p>Connect to your MetaMask Wallet</p>
+                </div>
+
+                <hr style="margin: 0.5rem;">
+
+                <div class="web3-selection-container walletconnect-selection-container" (click)="connectWalletconnect()">
+                    <div class="web3-icon-container">
+                        <img src="assets/images/walletconnect-icon.svg" alt="WalletConnect">
+                    </div>
+                    <h2>WalletConnect</h2>
+                    <p>Scan with WalletConnect to connect</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

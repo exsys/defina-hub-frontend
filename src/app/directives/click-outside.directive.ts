@@ -21,7 +21,7 @@ export class ClickOutsideDirective {
     if(!this.isVisible) this.showContent = false;
 
     if(this.showContent) {
-      // dieser part soll nur aufgerufen werden wenn man click outside macht. click inside oder hero auswählen soll das nicht aufrufen
+      // this part should only be reached when a click outside was done. a click inside of the element shouldn't be able to reach this part.
       if(!this.emRef.nativeElement.contains(event.target)) {
         this.showContent = false;
         this.clickOutside.emit(event);

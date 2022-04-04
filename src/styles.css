@@ -32,7 +32,7 @@ body, html {
     position: relative;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, button, ul, a, table, input, label {
+h1, h2, h3, h4, h5, h6, p, span, button, ul, a, i, table, input, label, div {
     color: var(--font-color-main);
     margin: 0;
 }
@@ -42,10 +42,16 @@ ul {
     padding: 0;
 }
 
+.walletconnect-modal__mobile__toggle, .walletconnect-modal__footer {
+    color: #898d97;
+}
+.walletconnect-modal__mobile__toggle a {
+    cursor: pointer;
+}
+
 .border-b {
     border-bottom: 1px solid lightgray;
 }
-
 .border-b-2 {
     border-bottom: 1px solid gray;
 }

@@ -1,0 +1,358 @@
+p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+img {
+    width: 26px;
+    margin-right: 0.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+label {
+    font-size: calc(1.3rem + .6vw);
+}
+
+li {
+    padding: 0.3rem 0.5rem;
+    border-bottom: 1px solid gray;
+}
+
+li:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+li:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+li:hover {
+    background: var(--bg-color-2);
+}
+
+input {
+    background: var(--bg-color-1);
+    border: 1px solid var(--main-color-1);
+    border-radius: 0.25rem;
+    padding: 0.35rem 0.5rem 0.35rem 0.75rem;
+    width: 65%;
+    outline: none;
+}
+
+input:hover {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background: var(--bg-color-2);
+}
+
+input:focus {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.donate-page-container {
+    padding-top: 8rem;
+}
+
+.donate-page-content {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.donate-page-text {
+    text-align: center;
+    word-break: break-word;
+    margin-bottom: 2rem;
+}
+
+.donate-form-container {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.form-element {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.25rem 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.max-button-container {
+    position: absolute;
+    top: 0.75rem;
+    right: 1.5rem;
+}
+
+.utility-stuff-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.max-button, .disconnect-button {
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.max-button:hover, .disconnect-button:hover {
+    color: var(--main-color-1);
+}
+
+.error-message {
+    font-size: 0.9rem;
+    color: rgb(197, 40, 20);
+    position: relative;
+    margin-right: 1.5rem;
+}
+.error-message::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f00d";
+    position: absolute;
+    right: -0.9rem;
+    cursor: pointer;
+}
+
+.coin-selection-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--bg-color-1);
+    border: 1px solid var(--main-color-1);
+    border-radius: 0.25rem;
+    padding: 0.35rem 2rem 0.35rem 0.75rem;
+    width: 65%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.coin-selection-container:hover {
+    background: var(--bg-color-2);
+}
+
+.coin-selection-container::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f078";
+    color: var(--font-color-main);
+    position: absolute;
+    display: block;
+    right: 0.45rem;
+    top: 0.45rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.coin-selection-container.open::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f077";
+    color: var(--font-color-main);
+    position: absolute;
+    display: block;
+    right: 0.45rem;
+    top: 0.45rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.coin-selection-list {
+    display: none;
+    position: absolute;
+    background: var(--bg-color-1);
+    border-radius: 0.25rem;
+    border: 1px solid var(--main-color-1);
+    transform-origin: left top;
+    left: 0;
+    top: 39px;
+    width: 100%;
+}
+
+.wallet-address {
+    cursor: pointer;
+}
+
+.wallet-address:hover {
+    color: var(--main-color-1);
+}
+
+.wallet-address:hover i {
+    color: var(--main-color-1);
+}
+
+.popup-container {
+    display: inline-block;
+    position: relative;
+}
+
+.popup-text {
+    visibility: hidden;
+    position: absolute;
+    width: 100px;
+    background-color: #555;
+    text-align: center;
+    border-radius: 0.25rem;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.popup-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.balance-container {
+    padding: 0 1rem;
+}
+
+.balance-content {
+    color: rgb(116, 116, 116);
+    font-size: 0.92rem;
+}
+
+.web3-modal-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.web3-modal-wrapper {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.web3-modal-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75rem;
+    background: #222930;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 0.5rem;
+}
+
+.web3-selection-container {
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.web3-selection-container:hover {
+    background: #0C1519;
+}
+
+.web3-selection-container h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.web3-icon-container {
+    width: 48px;
+    height: 48px;
+}
+
+.web3-icon-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.1s ease-in-out;
+    animation: fadeIn 0.1s ease-in-out;
+}
+
+.show-content {
+    display: block;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+  
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 576px) {
+    .donate-page-content {
+        width: 80%;
+    }
+    .web3-modal-wrapper {
+        width: 70%;
+    }
+}
+@media (min-width: 768px) {
+    .donate-page-content {
+        width: 60%;
+    }
+    .coin-selection-container, input {
+        width: 55%;
+    }
+    .web3-modal-wrapper {
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .donate-page-content {
+        width: 40%;
+    }
+    label {
+        font-size: 1.75rem;
+    }
+    .web3-modal-wrapper {
+        width: 35%;
+    }
+}
+@media (min-width: 1500px) {
+    .donate-page-content {
+        width: 30%;
+    }
+    .web3-modal-wrapper {
+        width: 23%;
+    }
+}

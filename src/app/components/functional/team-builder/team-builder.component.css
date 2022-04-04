@@ -20,6 +20,16 @@ li:hover {
     font-size: 0.9rem;
 }
 
+a:hover {
+    color: var(--main-color-1);
+}
+
+.donate-href {
+    margin-left: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .selection-container-mobile {
     display: block;
     text-align: center;

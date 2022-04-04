@@ -6,6 +6,7 @@
             </div>
     
             <div class="header-items-container flex-row">
+                <a routerLink="/donate">Donate</a>
                 <a routerLink="/guides">Guides</a>
                 <a routerLink="/contact">Suggestion</a>
             </div>
@@ -16,6 +17,7 @@
             </div>
             <div class="navbar-collapse-mobile" [class.show-content]="showToggle === true">
                 <ul>
+                    <li><a routerLink="/donate" (click)="closeNavbar()">Donate</a></li>
                     <li><a routerLink="/guides" (click)="closeNavbar()">Guides</a></li>
                     <li><a routerLink="/contact" (click)="closeNavbar()">Suggestion</a></li>
                 </ul>

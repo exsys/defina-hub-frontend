@@ -141,7 +141,7 @@ export class DonatePageComponent implements OnInit {
 
     // TODO: do some other checks.
     if (this.selectedAmount.value == 0) {
-      this.errorMsg = "Value needs to be > 0";
+      this.errorMsg = "Amount can't be 0.";
       return;
     }
 

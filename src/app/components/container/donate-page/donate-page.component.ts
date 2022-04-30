@@ -14,7 +14,7 @@ declare let Web3: any;
 })
 export class DonatePageComponent implements OnInit {
 
-  private readonly donationWalletAddress: string = "0x2A619a181C0386ad26f997a45b2C9C14eB096fa5";
+  readonly donationWalletAddress: string = "0x2A619a181C0386ad26f997a45b2C9C14eB096fa5";
 
   // html stuff
   togglePopup: boolean = false; // copied popup
@@ -220,7 +220,7 @@ export class DonatePageComponent implements OnInit {
   async checkConnection(): Promise<void> {
     if (this.web3) {
       // get connected accounts and if no accounts are connected the returned array will be empty
-      const connected = await this.web3.eth.getAccounts();
+      const connected = await this.web3.eth.getAccounts(); // DOESN'T cause metamask to popup
       if (connected.length !== 0) {
         this.walletConnected = true;
         this.accounts = connected;

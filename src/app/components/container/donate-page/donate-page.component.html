@@ -3,8 +3,8 @@
         <div class="donate-page-text text-center">
             <p class="w-100 mb-3">If you enjoy this project I'd be happy about any donation!</p>
             <div class="popup-container">
-                <p class="wallet-address" (click)="copyToClipboard()">0x2A619a181C0386ad26f997a45b2C9C14eB096fa5 <i
-                        class="fa-regular fa-copy"></i></p>
+                <p class="wallet-address" (click)="copyToClipboard()">{{ donationWalletAddress }}
+                    <i class="fa-regular fa-copy"></i></p>
                 <span class="popup-text" [class.show]="togglePopup" #copiedPopup>Copied!</span>
             </div>
         </div>

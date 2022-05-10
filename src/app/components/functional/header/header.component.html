@@ -10,12 +10,13 @@
                 <a routerLink="/guides">Guides</a>
                 <a routerLink="/contact">Suggestion</a>
             </div>
-            <div class="navbar-toggle-mobile" [class.toggle-button]="showToggle === true" (click)="toggleNavbar()">
+            <div class="navbar-toggle-mobile" [class.toggle-button]="showToggle" (click)="toggleNavbar()">
+                <!-- hamburger/close button on mobile -->
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="navbar-collapse-mobile" [class.show-content]="showToggle === true">
+            <div class="navbar-collapse-mobile" [class.show-content]="showToggle">
                 <ul>
                     <li><a routerLink="/donate" (click)="closeNavbar()">Donate</a></li>
                     <li><a routerLink="/guides" (click)="closeNavbar()">Guides</a></li>

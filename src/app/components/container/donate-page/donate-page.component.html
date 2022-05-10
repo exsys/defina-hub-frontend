@@ -17,8 +17,8 @@
                     <div class="coin-selection-container border-main-color-1" [class.open]="toggleCoinList" (click)="showCoinList()">
                         <img class="me-2" src="assets/images/{{ selectedCoin.toLowerCase() }}.png" alt="{{ selectedCoin.toLowerCase() }}">
                         <h4>{{ selectedCoin }}</h4>
-                        <div class="coin-selection-list border-main-color-1 w-100" [class.show-content]="toggleCoinList" [isVisible]="toggleCoinList" 
-                            (clickOutside)="close()">
+                        <div class="coin-selection-list border-main-color-1 w-100" [class.show-content]="toggleCoinList" 
+                            [isVisible]="toggleCoinList" (clickOutside)="close()">
                             <ul>
                                 <li class="border-b-2" *ngFor="let coin of coinSelection" (click)="selectCoin(coin)">
                                     <div class="d-flex flex-row">

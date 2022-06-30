@@ -58,7 +58,7 @@ export class DonatePageComponent implements OnInit {
         this.checkConnection();
       });
     }
-    /* this check can't be done for walletcollect without the connecting popup appearing so for now only metamask gets pre-checked */
+    /* this check can't be done for walletconnect without the connecting popup appearing so for now only metamask gets pre-checked */
     this.checkConnection(); // check if metamask is already connected
   }
 
